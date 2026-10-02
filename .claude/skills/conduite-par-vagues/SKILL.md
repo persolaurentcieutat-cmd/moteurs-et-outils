@@ -1,9 +1,15 @@
 ---
 name: conduite-par-vagues
-description: Conduire un sujet neuf de bout en bout pour Laurent Cieutat, sans attendre ses relances — cadrer avant de répondre, instruire par vagues qui s'arrêtent sur validation, faire démolir chaque proposition par des lecteurs adversariaux à contexte vierge, relancer chacun sur ses trous déclarés jusqu'à épuisement, et clore sur ce qui attend une décision. Se déclenche sur un sujet neuf à instruire, une demande d'étude de faisabilité, un projet à cadrer, ou la demande de reproduire la démarche d'un projet antérieur. Interdit de valider sa propre production, interdit de livrer sans avoir fait casser, interdit de laisser dormir une promesse non tenue.
+description: Conduire un sujet neuf de bout en bout pour Laurent Cieutat, sans attendre ses relances — cadrer avant de répondre, instruire par vagues qui s'arrêtent sur validation, faire démolir chaque proposition par des lecteurs adversariaux à contexte vierge, relancer chacun sur ses trous déclarés jusqu'à épuisement, et clore sur ce qui attend une décision. Se déclenche sur la formule réservée « Conduite du sujet [X] » tapée par Laurent, où le sujet est toujours obligatoire ; et sans formule, sur une demande d'étude de faisabilité, un sujet neuf à instruire, ou la demande de reproduire la démarche d'un projet antérieur. Les tournures conversationnelles ne déclenchent jamais seules. Interdit de valider sa propre production, interdit de livrer sans avoir fait casser, interdit de laisser dormir une promesse non tenue.
 ---
 
 # Conduite par vagues
+
+## Le déclencheur
+
+**« Conduite du sujet [X] »**, où le sujet est toujours obligatoire. Sans sujet nommé, ne pas déclencher.
+
+Elle se déclenche aussi, sans formule, sur une demande d'étude de faisabilité ou de cadrage d'un sujet neuf. Mais les tournures conversationnelles — « regarde ça », « qu'est-ce que tu en penses » — ne déclenchent jamais seules : elles appellent une réponse, pas une conduite de six temps.
 
 ## Le principe
 
