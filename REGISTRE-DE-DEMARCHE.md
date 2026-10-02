@@ -195,3 +195,39 @@ Toute annonce faite dans une réponse entre ici et n'en sort que quand l'objet e
 | Crochets de démarrage et de fin de tour | 2 oct. 2026 | ✅ tenus — `.claude/hooks/` |
 | **Prompt de lancement réécrit en plan de construction** | 2 oct. 2026 | **⏳ dû** — j'ai annoncé la réécriture dès que l'agent méthode rendrait son chiffrage. Il a rendu |
 | **Mesure du déclenchement des deux compétences** | 2 oct. 2026 | **⏳ jamais fait** — deux compétences écrites et poussées sans qu'aucune n'ait été éprouvée. Par ma propre doctrine, elles sont au mieux en `B·3` |
+
+---
+
+## 9 — Point d'arrêt
+
+**Pause demandée par Laurent Cieutat le 2 octobre 2026.**
+
+### Ce qui est écrit dehors, donc acquis
+
+| Pièce | État |
+|---|---|
+`PLAN-DE-CONSTRUCTION.md` | Écrit, poussé, **non encore cassé** — quatre lecteurs étaient en cours dessus |
+`REGISTRE-DE-DEMARCHE.md` | Ce fichier, neuf registres |
+`.claude/skills/conduite-par-vagues/` · `registre-de-demarche/` | Deux compétences, cousues au système existant |
+`.claude/hooks/` + `.claude/settings.json` | Deux crochets éprouvés en exécution — mémoire au démarrage, promesses en fin de tour |
+`socle/` | 1 183 lignes, 21 assertions sur 21 prouvées |
+`critiques/` | Neuf fichiers, les cinq lecteurs du prompt de lancement |
+`00-PROMPT-DE-LANCEMENT.md` | **Obsolète dans sa quasi-totalité.** Conservé comme trace de ce qui a été cru et renversé, jamais comme consigne |
+
+### Ce qui tournait encore à la pause
+
+Quatre lecteurs adversariaux sur le plan de construction, angles : exécution … trésorerie … calendrier externe … cohérence interne. Leurs fichiers s'écrivent dans `critiques/06` à `09`. **Ils ne commitent pas** : au retour, vérifier leur présence et les committer.
+
+### Les trois gestes gratuits qui attendent, par ordre de ce qu'ils débloquent
+
+1. **Tester l'accès aux avis Google** — un compte, une heure. Décide de la praticabilité du volet avis entier
+2. **Tester la veille sur quatre semaines réelles** — deux à trois jours. Décide si le produit se vend, dans les deux sens
+3. **Question au bâtonnier de Guadeloupe** — quatre points rédigés. Lève la seule réserve du segment avocat
+
+### La décision qui commande ce qui est tenable
+
+**Qui maintient ?** 22 à 37 jours-personne par an, contre 450 à 700 € de serveur. Un rapport de dix contre un, et la question n'a jamais été posée.
+
+### Pour une session neuve
+
+Lire ce registre, puis `PLAN-DE-CONSTRUCTION.md`. Ne pas ouvrir les critiques d'abord : 500 Ko, et le registre en porte les conclusions. Le lexique de la section 1 est indispensable — une quinzaine de notions ont été inventées ici et n'existent nulle part ailleurs.
