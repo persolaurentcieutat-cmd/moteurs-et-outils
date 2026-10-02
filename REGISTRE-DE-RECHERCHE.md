@@ -108,8 +108,15 @@ La règle de la section 5 s'applique à partir des lecteurs du plan de construct
 | Exécution du plan | **50** | 36 | 7 | 12 | 16 `A` sur sorties collées · **0 `B`** · 3 `C` dont 2 rétrogradées par lui-même · 3 `D` déclarées |
 
 | Calendrier externe | **38** | 24 | 7 | 7 | **27 adresses primaires pour 27 affirmations — écart zéro** · 3 `D` déclarées |
+| Trésorerie | **25** | 9 | 0 | 8 | **22 affirmations en source primaire pour 7 adresses → 15 lignes rétrogradées par lui-même**, le compte donné spontanément |
 
 **Zéro source primaire revendiquée par le premier, et c'est honnête** : il a mesuré au lieu de citer. Le second affiche un **écart nul**, a rétrogradé une de ses propres lignes contre son intérêt d'argumentation, et a corrigé quatre manquements trouvés par son propre audit mécanique. **La règle tient dès son premier jour d'application.**
+
+### La règle mord dès son premier jour, et contre son auteur
+
+Le lecteur de la trésorerie a compté lui-même ses 22 affirmations en source primaire contre 7 adresses réelles, et **rétrogradé quinze de ses propres lignes**. Résultat le plus utile de l'opération : **le plancher de coût sur lequel le plan tarifait son produit tombe au cran le plus bas.** La sanction ne vide pas le travail — elle désigne exactement l'endroit où il ne fallait pas s'appuyer.
+
+Il a aussi déclaré **huit hôtes refusés après une seule tentative chacun**, sans relance. Par la règle de la section ci-dessous, ce ne sont donc pas des refus : une heure de navigateur humain les règle tous les huit.
 
 ### La correction qui vaut pour tous les refus déjà inscrits
 
