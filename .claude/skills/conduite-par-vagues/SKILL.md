@@ -82,6 +82,18 @@ Deux gestes qui doublent le rendement d'une relance :
 — **Croiser les lecteurs.** Transmettre à l'un ce qu'un autre a établi, et lui demander si sa conclusion tient à cette lumière. Deux lecteurs indépendants qui convergent sur un point font le fait le plus solide qu'on puisse obtenir sans mesure
 — **Accepter ce qui tombe, sans le défendre.** Le dire dans la relance : *ton retour est accepté, y compris les erreurs que tu me mets sur le dos et que j'assume*. Un lecteur qui sent une défense argumente au lieu de chercher
 
+## Temps 4 bis — Le journal de requêtes
+
+**Né d'une faute réelle : cinquante-six affirmations en source primaire pour quarante-huit adresses citées, et personne n'avait contrôlé.**
+
+Trois obligations, et la troisième est la seule qui tienne sans mémoire.
+
+**1. Tout lecteur rend son journal.** En annexe de son fichier : la liste datée de ce qu'il a cherché — la requête ou l'adresse, l'outil employé, le résultat en un mot : trouvé, rien, refusé. **Les recherches infructueuses sont la moitié de l'information** : elles disent où il est inutile de retourner.
+
+**2. Pas d'adresse, pas de cran.** Une affirmation en source primaire sans adresse ni date de consultation redescend d'un cran de robustesse. Elle reste une piste, elle n'engage plus une dépense.
+
+**3. Le contrôle est mécanique, jamais déclaratif.** Compter les affirmations qui se réclament d'une source primaire, compter les adresses citées, publier l'écart. Un écart qui se creuse signale que la règle n'est plus tenue, sans que quiconque ait à s'en souvenir. La commande est inscrite dans `REGISTRE-DE-RECHERCHE.md`.
+
 ## Temps 5 — Le registre des promesses
 
 **Ce registre existe parce que Laurent a dû demander « où en est la compétence ».** C'est le seul rappel de sa part qui était une faute pure de conduite.
@@ -90,6 +102,7 @@ Toute annonce faite dans une réponse — *je vais écrire*, *je propose de*, *j
 
 ## Temps 6 — Clore
 
+— Lancer le contrôle de l'écart et verser son relevé au registre de recherche
 — Verser au registre de démarche, par la compétence `registre-de-demarche` : les renversements, les faits, les décisions, les désaccords, les murs, le lexique
 — Si le sujet est un projet du Container, appeler **`fermeture-projet`** pour les tableaux Notion. Le fichier et les tableaux ne se remplacent pas
 — Lister **ce qui attend une décision, trié par coût croissant.** Les actions gratuites en tête : ce sont celles qui dorment, et ce sont souvent les plus décisives
@@ -109,6 +122,7 @@ La démolition du temps 3 est faite par des lecteurs que cette session a lancés
 — **Produire une mesure en falsifiant un signal chez un tiers** : ni faux avis, ni faux compte, ni faux clic. Aucune exception, aucune décision ne la lève
 — **Convertir un effort en jours sans l'avoir chronométré**
 — **Laisser dormir une promesse non tenue**
+— **Accepter un retour sans son journal de requêtes**, ou une source primaire sans son adresse
 
 ## Deux leçons de terrain à ne pas réapprendre
 
