@@ -26,6 +26,7 @@ Aucune de ces notions n'existe ailleurs. Sans ce registre, les fichiers de criti
 | **Fiche produit / fiche organe** | Ce qui a une seule réponse pour tout le produit s'écrit une fois ; une fiche d'organe **cite** la fiche produit par sa version et ne la recopie jamais | Agent doctrine, 3e tour |
 | **Remontée et compteur** | Une fiche d'organe qui contredit la fiche produit n'écrase rien, elle inscrit une remontée. Trois remontées sur un même champ = champ mal maillé, sans autre discussion | Agent doctrine |
 | **L'écart** | La relance de preuve ne part plus avec l'agent : un relecteur note les couples lui-même et publie l'écart avec l'autoclassement. **L'écart mesure le barème, pas l'agent** | Agent doctrine |
+| **Interdit du faux signal** | Aucune mesure ne s'obtient en produisant un faux signal dans la donnée d'un tiers : ni faux avis, ni faux compte, ni faux clic. Règle absolue, elle ne cède à aucune décision E | Né d'une erreur de protocole que j'ai retirée, et que l'agent marché a demandé d'inscrire pour qu'elle ne se reproduise pas |
 
 ---
 
@@ -81,8 +82,25 @@ Toutes sont de moi, sauf mention. C'est le registre le plus utile du document.
 | **Plancher de coût : 25 à 35 € HT sans la presse, 100 à 120 € HT avec** | `B·3` | Calcul sur entrées sourcées, volume d'avis en cran D |
 | **Aucune plateforme n'offre un accès délégué complet.** Google seul est en jeton délégué, et son point d'accès aux avis serait inatteignable. Booking et Expedia lisent et répondent, mais par compte machine. TripAdvisor n'a aucun point de réponse et plafonne à 5 avis | `B·2`, sauf l'inaccessibilité Google en `C·3` | Documentations et témoignages de forum |
 | **L'administration ne peut pas opposer son droit de producteur sur ses données ouvertes** — c'est un droit, non une tolérance | `B·2` | Code des relations entre le public et l'administration |
+| **Avocat : il peut solliciter et recueillir des avis, il ne peut pas intégrer la note à sa communication.** La frontière est l'intégration, non l'avis. Aucune interdiction générale des témoignages de clients, à l'inverse exact du médecin | `B·2` | Cour de cassation, 1re civ., 11 mai 2017 et 22 mai 2019 |
+| La note publiée par un tiers est licite et l'Ordre n'a **aucune prise** sur ce tiers ; la faute naît quand l'avocat la reprend chez lui | `B·2` | Même jurisprudence, et règlement intérieur national |
+| **Ce qui est sanctionné est le faux témoignage, pas le témoignage** : la faute retenue est la fabrication — des commentaires laudatifs censés émaner de clients mais répétés en termes identiques | `B·2` | Avis déontologique d'un barreau, 2015 |
+| **Interdiction d'utiliser les services d'un tiers pour contourner ces interdictions.** Vendre à un avocat la collecte d'avis par message mobile ne serait pas un service mais un contournement, et nous en serions l'instrument | `B·2` | Règlement intérieur national, art. 10.3 |
+| Le site de l'avocat ne peut comporter aucun encart publicitaire, et il doit **surveiller ses liens sortants et les retirer sans délai** | `B·2` | Règlement intérieur national, art. 10.5 |
+| Prestataire tiers licite **à condition que la somme versée ne soit pas un partage d'honoraires** : facturer à l'abonnement, jamais à la performance | `B·2` | Règlement intérieur national |
+| Annoncer un taux de succès est une faute disciplinaire. **Un générateur de texte sans garde-fous métier produit une faute** | `B·2` | Avis déontologique, 2002 |
+| ⏳ Un avis de 2012 juge contraires les liens vers les réseaux sociaux, « n'offrant pas les garanties nécessaires ». Probablement dépassé par la réforme de 2020, mais **toujours republié en 2026**, donc opposable par un bâtonnier | `B·3` | Avis déontologique republié |
 
-**La convergence la plus précieuse de la session.** La licence des décisions de justice impose de mentionner source et date de mise à jour. Le règlement intérieur des avocats impose de transmettre à l'Ordre toute publicité. L'organe de provenance du projet exige la source primaire, la date et la rejouabilité. **Les trois demandent la même pièce** : journal de provenance en entrée, registre transmissible en sortie, un seul organe. Aucun concurrent ne l'a.
+**La convergence la plus précieuse de la session, et elle s'est renforcée à chaque tour.** Un seul organe — le journal de provenance — satisfait **quatre** obligations réglementaires distinctes, qu'aucun concurrent ne traite :
+
+| Obligation | Source | Ce que la provenance en fait |
+|---|---|---|
+| Mentionner source et date de mise à jour, quel que soit le support | Licence des décisions de justice en accès ouvert | Le champ existe déjà, mesuré à 100 % |
+| Transmettre sans délai à l'Ordre toute publicité et modification | Règlement intérieur des avocats | Le journal **est** le registre transmissible |
+| Surveiller les liens sortants et les retirer sans délai | Règlement intérieur des avocats | La trace de provenance **est** l'inventaire des liens |
+| Prouver qu'un témoignage n'est pas fabriqué | Jurisprudence disciplinaire : la faute est la fabrication | La rejouabilité par empreinte **est** la preuve d'authenticité |
+
+C'est la pièce que l'agent méthode a mesurée en 64 lignes à 100 %, et que j'avais rangée quatrième sur huit.
 
 ---
 
@@ -118,7 +136,7 @@ Institut national de la statistique · support et documentation développeurs Go
 
 | Document | Ce qu'il décide | Coût de lecture |
 |---|---|---|
-| Fiche n° 4 du vade-mecum du Conseil national des barreaux, publicité par internet | Si un avocat peut solliciter et afficher des avis de clients. **Un quart du produit sur ce segment** | Vingt pages, une demi-heure |
+| ~~Fiche n° 4 du vade-mecum du Conseil national des barreaux~~ | **Résolu autrement** : l'hôte est devenu inaccessible, mais le code de déontologie annoté d'un barreau, 34 pages lues en entier, est plus riche que la fiche manquante | Fait |
 
 ### Trous de preuve assumés
 
@@ -140,4 +158,5 @@ Institut national de la statistique · support et documentation développeurs Go
 |---|---|---|
 | Test chez le prestataire local, **200 € et non 80 €** | Une dépense, et le protocole corrigé | Le **premier `A`** du projet. Degré réel d'automatisation du concurrent, son guichet, et le jeu d'épreuve guadeloupéen que rien d'autre ne peut fournir |
 | **Test à 0 € sur l'accès aux avis Google** | Un compte et une heure | La conclusion la plus coûteuse si elle est fausse. Si ce point d'accès est réellement inatteignable, le volet avis n'a **aucune** plateforme praticable |
+| **Question au bâtonnier de Guadeloupe** — gratuite | Quatre points rédigés, une réponse de trois lignes suffit | Lève la seule réserve du volet avocat : les textes ne nomment jamais « avis en ligne », donc toute l'analyse applique des règles générales à un objet non nommé |
 | Élargissement de l'accès réseau | Un réglage | Toute mesure guadeloupéenne réelle, et la vérification des sources primaires de droit |
