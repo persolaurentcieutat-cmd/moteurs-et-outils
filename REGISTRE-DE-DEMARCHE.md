@@ -50,6 +50,12 @@ Toutes sont de moi, sauf mention. C'est le registre le plus utile du document.
 | « Le mandat ne commande que le volet avis » | Doctrine, `B·2` | Publier sur les comptes d'un client exige la même délégation. Il commande **la moitié du produit, et la moitié qui agit** |
 | « Le fuseau et le créole sont des exigences discriminantes qui disqualifient des outils » | Technique, `A·1` | Les deux sont tenus par des briques libres existantes et mesurées. Elles ne disqualifient **rien** |
 | « L'organe de garde des accès ne doit pas exister » — ma conclusion après quatre agents | Technique, `A·1` | Nuance : il ne faut pas le **construire**, 97,8 années-auteur en face. Mais il existe en libre, mesuré, révocation en 123 ms. On l'**assemble** — et il reste nécessaire, un jeton d'autorisation étant un secret |
+| « Le socle rend 21 assertions sur 21 prouvées » — porté par moi au plan comme fondation de la phase 1 | Exécution, `A·1` | **Vrai sur un banc synthétique que le socle a lui-même généré. Sur le vrai fichier de sources : 0 capture, 0 assertion, étalons à 0,0 % — et code de sortie 0 à chaque étape.** Le socle se mesure contre ses propres pages |
+| « Une règle est inscrite dans le code : ne pas collecter une source dont la licence n'a pas été lue » — écrite en gras dans le plan | Exécution, `A·1` | **Elle n'y est pas.** La requête du collecteur ne filtre que le verdict. Épreuve : 12 captures et 21 assertions sur une source sans licence lue, étalons à 100 % |
+| « Le code n'est pas le coût, l'approbation l'est » — fondation du plan, annoncée en `A·1` | Exécution, `C·2` | Le refus 403 vient d'un **bouchon de 17 lignes du projet lui-même**, qui refuse en dur pour qu'un échec soit mesuré. Mesure circulaire. La conclusion reste probablement juste ; **son cran s'effondre** |
+| « Le test de la veille sur quatre semaines réelles est gratuit et décisif » | Exécution, `A·1` | **Non exécutable en l'état.** Les trois sources sont des portails de données, le socle est un explorateur de pages et de prose. Aucun adaptateur, aucun filtre territorial, aucun suivi de redirection |
+| « La semaine 0 peut déposer les dossiers d'approbation » | Exécution, `C·2` | **Le chemin critique ne commence pas au dépôt, il commence au greffe** : société immatriculée, domaine, site en ligne, politique de confidentialité, page vérifiée, vidéo de démonstration. Le plan n'en nomme aucun |
+| « L'accès aux avis Google est peut-être inatteignable » — crainte portée au registre | Exécution, `A·1` | **Renversée dans sa forme forte** : le point d'accès répond 401 identifiant manquant, non 404. Il est routé et vivant. L'obstacle est l'approbation, le même qu'ailleurs |
 | « La Guadeloupe est un avantage produit » | Marché **et** Marché-libéral, `B·2` | Les six exigences ne couvrent que 3,5 à 5,2 % du marché adressable. Nulle ne s'applique à un cabinet d'avocat |
 | Protocole de test : « déposer un avis portant un détail vérifiable » (proposé par l'agent marché) | Moi, `B·1` | Déposer un avis non fondé sur une expérience réelle enfreint l'obligation même que le projet veut tenir |
 | « Le prix plafond local est 80 €/mois » — relayé par moi à Laurent comme un fait | Droit, 3e tour, `B·2` | **Cette offre n'existe pas.** Pages de vente lues : le prestataire de Saint-Claude est à **200 €/mois, avis non inclus**. La moins chère qui réponde à tous les avis est à **450 € HT**. Le parapluie tarifaire est 2,5 à 5 fois plus haut |
@@ -161,6 +167,18 @@ Institut national de la statistique · support et documentation développeurs Go
 — Prix plafond du segment libéral non sourcé : les éditeurs métier ne publient pas leurs tarifs
 — Le point d'accès aux avis Google est-il praticable ? Trois témoignages de forum disent non, aucune source primaire. **Décide à lui seul de la praticabilité du volet avis**
 — Nombre d'avis mensuels par établissement : inconnu, et il déplace tout le calcul
+
+### Ce qui manque entre « le code tourne » et « un client paie »
+
+Zéro occurrence au plan pour chacun de ces termes — relevé mécanique :
+
+**Administratif** société immatriculée · régime de TVA · facture conforme et sa numérotation · moyen d'encaissement · conditions générales de vente · contrat d'abonnement · contrat de sous-traitance et la chaîne complète de protection des données
+**Technique** nom de domaine · site · mentions légales · politique de confidentialité · **ordonnanceur et envoi de courriel — aucune trace dans le socle : le rapport existe sur un disque et n'arrive chez personne** · création d'un client · rattachement d'une source à un client
+**Vital** **sauvegarde des archives et de la base — un disque perdu ne détruit pas des données, il détruit la preuve, seule chose que ce produit vend** · astreinte du dimanche soir pour un produit à rendez-vous du lundi
+
+### Le livrable ne tient pas sa propre promesse
+
+Le rapport produit porte le gabarit non rempli `<date du jeu>`. **L'obligation de mentionner la date de mise à jour — celle que je présentais comme la plus belle convergence du projet — n'est pas tenue dans le fichier qui sort.** Et un rapport de semaine vide part avec un auto-audit à 0,0 % et un code de sortie 0 : rien ne distingue une semaine calme d'une collecte cassée.
 
 ### La question que personne n'a posée
 

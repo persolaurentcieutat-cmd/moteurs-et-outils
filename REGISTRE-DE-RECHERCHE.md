@@ -99,6 +99,20 @@ Ce qui manque au passé ne manquera plus. Trois obligations, inscrites dans la c
 
 ---
 
+## 5 bis — Journaux de requêtes reçus
+
+La règle de la section 5 s'applique à partir des lecteurs du plan de construction. Premier journal reçu, et il est conforme.
+
+| Lecteur | Requêtes | Trouvé | Rien | Refusé | Crans revendiqués |
+|---|---|---|---|---|---|
+| Exécution du plan | **50** | 36 | 7 | 12 | 16 `A` sur sorties collées · **0 `B`** · 3 `C` dont 2 rétrogradées par lui-même · 3 `D` déclarées |
+
+**Zéro source primaire revendiquée, et c'est honnête** : il a mesuré au lieu de citer. C'est le premier retour de la session dont le comptage ne peut pas démentir le classement.
+
+### Hôtes refusés par ce lecteur — à ne pas réessayer
+
+developers.facebook.com · developers.google.com · business.google.com · linkedin.com · mastodon.social · data.gouv.fr · le portail des annonces commerciales en données ouvertes · legifrance.gouv.fr · insee.fr · le barreau de Guadeloupe · les services de l'État en Guadeloupe · learn.microsoft.com
+
 ## 6 — Le contrôle, rejouable
 
 ```
