@@ -1,10 +1,11 @@
 # Prompt de lancement — Moteurs de collecte vérifiée et outils de publication
 ## Guadeloupe, cœur d'activité
 
-Version 3 — 2 octobre 2026
+Version 4 — 2 octobre 2026
 Révisions successives après décisions de Laurent Cieutat :
 — v2 : on construit ce qui n'existe pas en libre … la Guadeloupe est le cœur et non une cible
-— v3 : le mur juridique n'est pas un mur mais **un péage à cinq guichets** … ajout du cran de preuve D
+— v3 : le mur juridique n'est pas un mur mais **un péage à guichets** … ajout du cran de preuve D
+— v4 : ajout du **guichet 6, l'accès ouvert déclaré**, oublié en v3 … le guichet 5 éclaté en trois degrés de risque … la qualification se fait **source par source**, non plateforme par plateforme
 
 ---
 
@@ -35,9 +36,47 @@ Formulation corrigée en v3. Il n'y a pas de mur : il y a cinq voies d'accès li
 | **2 — Mandat du titulaire** | L'établissement possède l'accès à ses propres avis par son extranet. Il mandate un prestataire. Ce n'est pas de l'aspiration de tiers mais de l'agrégation pour le compte du propriétaire | Prestataires locaux, agences, consultants | Faible — contrat de mandat, et gestion rigoureuse des accès confiés | **Notre voie principale** |
 | **3 — API ouverte sur demande** | La plateforme publie une interface, l'accès se demande et se valide. Google Business Profile fonctionne ainsi ⏳ D | Tout acteur, après validation | Gratuit à faible — délai et conformité à prévoir | **Retenue** |
 | **4 — Licence de contenu** | On ne collecte pas gratuitement : on **paie le droit de collecter**. En France le Centre français d'exploitation du droit de copie gère les droits de panorama de presse ⏳ D | Plateformes de veille et de revue de presse ⏳ | Abonnement selon usage et diffusion ⏳ | **Retenue pour la veille presse** |
-| **5 — Aspiration sans autorisation** | Collecter en pariant que personne ne viendra | Nombre d'acteurs, de toutes tailles | Nul à l'entrée | **Écartée** — motifs en 2.4 |
+| **5 — Accès de fait, sans ouverture déclarée** | Collecter ce qui est atteignable sans que l'éditeur ait dit qu'on pouvait | Nombre d'acteurs, de toutes tailles | Nul à l'entrée | **Éclaté en trois degrés** — section 2.3 |
+| **6 — Accès ouvert déclaré** | L'éditeur a **voulu** que l'information soit reprise : données ouvertes publiques, licence explicite, flux publié exprès, interface publique sans condition restrictive | Tout le monde | Nul — obligations d'attribution et de débit respectueux | **Notre voie principale pour la collecte d'informations** |
 
-### 2.3 Les deux décisions qui expliquent pourquoi le guichet 5 est un pari
+### 2.3 Le guichet 5 éclaté — trois degrés, trois risques
+
+Correction de la v3 : « zone grise » était un fourre-tout qui mélangeait des situations sans rapport. La qualification se fait **source par source**, jamais plateforme par plateforme.
+
+| Degré | Situation | Risque | Verdict |
+|---|---|---|---|
+| **5a** | Atteignable, et **ouverture déclarée** — licence explicite, flux publié, fichier robots permissif | Ce n'est pas du guichet 5, c'est du **guichet 6** | **Retenu** |
+| **5b** | Atteignable sans restriction technique ni authentification, et conditions d'utilisation **muettes** sur la réutilisation | Faible à moyen — à qualifier source par source | **Retenu sous conditions**, avec fiche de qualification |
+| **5c** | Atteignable, mais conditions d'utilisation **interdisant** la réutilisation, ou recueil protégé par le droit sui generis, ou authentification et blocage à franchir | Fort | **Écarté** |
+
+**Les conditions du 5b sont des règles de conception de notre collecteur, non des promesses.**
+— Débit de collecte respectueux, jamais au point de nuire au service visé
+— Aucun contournement de protection technique, d'authentification ni de limitation
+— Pas de reproduction substantielle : on cite, on résume, on lie — on ne republie pas le recueil
+— Provenance conservée sur chaque élément capté, et rejouable
+— Retrait sous demande de l'éditeur, procédure écrite et tenue
+
+### 2.4 Le guichet 6 — ce que la v3 avait oublié
+
+C'est l'angle mort corrigé en v4, et il change le volet collecte d'informations.
+
+Des sources **veulent** être reprises et le déclarent. Elles ne relèvent d'aucune zone grise :
+
+| Famille | Exemples à établir en V0 | Ce qui subsiste comme obligation |
+|---|---|---|
+| Données ouvertes publiques | Portails d'État et de collectivités, institut national de la statistique, portails des collectivités guadeloupéennes ⏳ D | Attribution selon la licence |
+| Licences explicites de réutilisation | Creative Commons, Licence Ouverte française ⏳ D | Attribution, parfois partage à l'identique |
+| Flux publiés exprès pour être consommés | Flux RSS et Atom de la presse et des institutions | Respect du cadre de citation, pas de republication intégrale |
+| Interfaces publiques sans condition restrictive | À établir source par source | Débit, et lecture des conditions |
+| Communs documentaires | Encyclopédies et bases cartographiques libres ⏳ D | Attribution, partage à l'identique selon les cas |
+
+**Ce que cela débloque, et ce que cela ne débloque pas.**
+— **Débloqué** : une part probablement importante du corpus guadeloupéen institutionnel et de presse pour le volet veille et collecte vérifiée ⏳ proportion à établir en V0. C'est le cœur des moteurs, donc c'est décisif
+— **Non débloqué** : les avis de plateformes. Ils relèvent du 5c, donc le **guichet 2, le mandat du titulaire, reste la seule voie** pour ce volet
+
+Autrement dit : la correction de la v4 ouvre largement le volet moteurs de collecte, et laisse le volet avis exactement où il était.
+
+### 2.5 Les deux décisions qui expliquent pourquoi le degré 5c est un pari
 
 ⏳ Citées de mémoire, cran D. Vérification sur source primaire obligatoire en V1.
 
@@ -45,14 +84,14 @@ Formulation corrigée en v3. Il n'y a pas de mur : il y a cinq voies d'accès li
 
 **Newspaper Licensing Agency contre Meltwater**, Royaume-Uni, début des années 2010 — un acteur majeur de la veille média a dû prendre licence pour ses revues de presse. Réponse directe à la question « comment font les outils de veille » : **ils ne contournent pas, ils paient.**
 
-### 2.4 Pourquoi le guichet 5 est écarté — motifs d'affaires, non de morale
+### 2.6 Pourquoi le degré 5c est écarté — motifs d'affaires, non de morale
 
 — Un socle illicite ne passe aucune revue de diligence, ne se vend pas à un groupe hôtelier, ne se revend pas
 — Il casse le jour où une plateforme modifie ses défenses techniques, sans préavis et sans recours
 — Il expose à la responsabilité contractuelle, au droit sui generis des bases, au RGPD dès qu'un avis porte un prénom, et au parasitisme en droit français
 — Il nous met dans la catégorie des aspirateurs, exactement celle dont nous voulons nous distinguer
 
-### 2.5 Le retournement stratégique — l'accès licite est notre avantage
+### 2.7 Le retournement stratégique — l'accès licite est notre avantage
 
 Les grands acteurs aspirent parce qu'ils **n'ont pas de relation client**. Ils vendent à distance à des milliers de comptes qu'ils ne rencontreront jamais : demander un mandat créerait une friction qui les tuerait.
 
@@ -116,7 +155,7 @@ Règle : **tout agent déclare ses lignes D en tête de retour, avant le contenu
 |---|---|
 | Organe visé | Lequel des sept de la section 6 |
 | Modèle repéré | Nom, version, éditeur, licence ou statut propriétaire |
-| **Guichet emprunté par ce modèle** | Lequel des cinq, et à quel coût — ou « inconnu », jamais une supposition |
+| **Guichet emprunté par ce modèle** | Lequel des six, degré précisé s'il s'agit du 5, et à quel coût — ou « inconnu », jamais une supposition |
 | Étalon mesuré | Les chiffres obtenus au temps 2, sortie collée |
 | Équivalent libre trouvé | Nom, licence SPDX lue dans le fichier LICENSE, date du dernier commit, nombre de mainteneurs |
 | Écart à l'étalon | Chiffré, sur le jeu d'épreuve figé |
@@ -191,7 +230,7 @@ Parties avec chaque agent en fin de recherche, sans intervention.
 > Qu'as-tu obtenu — colle la sortie, pas ton résumé.
 > Qu'as-tu validé par toi-même et qu'as-tu recopié d'ailleurs.
 > Ton étalon est-il opposable — le jeu d'épreuve était-il figé avant la mesure, est-il guadeloupéen, et un tiers pourrait-il rejouer ta mesure à l'identique ?
-> Pour chaque acteur que tu citas comme faisant déjà ce travail : par quel guichet accède-t-il à la donnée, et comment le sais-tu ? Si tu ne le sais pas, écris-le.
+> Pour chaque acteur que tu cites comme faisant déjà ce travail : par quel guichet accède-t-il à la donnée, à quel degré s'il s'agit du guichet 5, et comment le sais-tu ? Si tu ne le sais pas, écris-le.
 > Reclasse chaque ligne en A-mesure, A-usage, B, C ou D. Toute ligne classée A sans sortie collée redescend en C. Tout étalon non rejouable redescend en B. Toute affirmation issue de ta seule mémoire redescend en D.
 
 ---
@@ -208,8 +247,9 @@ Agents :
 — **Marché** — qui achète, combien ils sont, ce qu'ils utilisent déjà, ce qu'ils paient aujourd'hui
 — **Sources locales** — presse, institutions, chambres, collectivités, et plateformes d'avis réellement utilisées en Guadeloupe
 — **Jeu d'épreuve** — constituer le corpus figé : pages locales réelles, avis réels multilingues, requêtes types. Le versionner et le geler
+— **Qualification des sources** — nouveau en v4. Pour chaque source locale recensée : son guichet, son degré s'il s'agit du 5, sa licence, ses conditions d'utilisation lues, et le verdict retenu ou écarté. Une fiche par source, pas par plateforme
 
-Livrable : **le terrain et le juge**.
+Livrable : **le terrain, le juge, et le registre des sources qualifiées**.
 
 ### V1 — Les guichets, le droit, les licences
 
@@ -269,6 +309,8 @@ Livrable : **l'architecture arbitrée**.
 — Une mesure sur un jeu d'épreuve non figé, ou non guadeloupéen
 — Une évaluation d'outil sans confrontation aux six exigences
 — Un acteur cité comme référence sans que son guichet d'accès soit nommé ou déclaré inconnu
+— Une source qualifiée en bloc avec sa plateforme, au lieu d'être qualifiée pour elle-même
+— L'étiquette « zone grise » employée sans préciser le degré 5a, 5b ou 5c
 — Une architecture avant la carte des guichets
 — Un chiffrage avant le banc d'essai
 
