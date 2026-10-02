@@ -56,6 +56,12 @@ Toutes sont de moi, sauf mention. C'est le registre le plus utile du document.
 | « Le test de la veille sur quatre semaines réelles est gratuit et décisif » | Exécution, `A·1` | **Non exécutable en l'état.** Les trois sources sont des portails de données, le socle est un explorateur de pages et de prose. Aucun adaptateur, aucun filtre territorial, aucun suivi de redirection |
 | « La semaine 0 peut déposer les dossiers d'approbation » | Exécution, `C·2` | **Le chemin critique ne commence pas au dépôt, il commence au greffe** : société immatriculée, domaine, site en ligne, politique de confidentialité, page vérifiée, vidéo de démonstration. Le plan n'en nomme aucun |
 | « L'accès aux avis Google est peut-être inatteignable » — crainte portée au registre | Exécution, `A·1` | **Renversée dans sa forme forte** : le point d'accès répond 401 identifiant manquant, non 404. Il est routé et vivant. L'obstacle est l'approbation, le même qu'ailleurs |
+| **« L'approbation est en amont, le code en aval »** — la thèse qui donne au plan sa forme entière | Calendrier, `B·2`, 27 adresses primaires | **Fausse, et non mal calibrée. C'est l'inverse sur trois plateformes sur cinq** : le dossier exige le développement **achevé, publiquement accessible et filmé**. L'approbation est en aval du code |
+| « La semaine 0 dépose les dossiers » | Calendrier, `B·2` | **Cercle vicieux démontré trois fois.** Un bouton de demande reste grisé *jusqu'à ce qu'un appel réussi soit enregistré*. **Fictive sur quatre plateformes sur cinq ; sur la cinquième il n'y a rien à déposer** |
+| « Une porte d'approbation par plateforme » | Calendrier, `B·2` | **Trois portes** chez l'une d'elles : vérification d'entreprise, revue d'application, puis **vérification de fournisseur technique, indépendante de la revue et obligatoire dès qu'on sert d'autres entreprises** |
+| « Le mandat est un poste de calendrier incompressible » | Calendrier, `B·2` | **C'est le plus court des trois** : deux à six semaines, contre deux mois et plus pour une approbation |
+| « Le décalage horaire ajoute un délai à chaque échange » — ma crainte | Calendrier, `A·1` | **Fausse, mesurée.** Quatre à cinq heures de recouvrement ouvré subsistent avec la métropole. Et la Guadeloupe est à **zéro ou une heure de New York, sept à huit heures de recouvrement** — meilleur que la métropole |
+| « Le test de l'accès aux avis Google est gratuit, une heure » | Calendrier, `B·2` | **C'est un test de plus de deux mois** : soixante jours d'ancienneté d'une fiche vérifiée sont exigés avant tout dossier |
 | « La Guadeloupe est un avantage produit » | Marché **et** Marché-libéral, `B·2` | Les six exigences ne couvrent que 3,5 à 5,2 % du marché adressable. Nulle ne s'applique à un cabinet d'avocat |
 | Protocole de test : « déposer un avis portant un détail vérifiable » (proposé par l'agent marché) | Moi, `B·1` | Déposer un avis non fondé sur une expérience réelle enfreint l'obligation même que le projet veut tenir |
 | « Le prix plafond local est 80 €/mois » — relayé par moi à Laurent comme un fait | Droit, 3e tour, `B·2` | **Cette offre n'existe pas.** Pages de vente lues : le prestataire de Saint-Claude est à **200 €/mois, avis non inclus**. La moins chère qui réponde à tous les avis est à **450 € HT**. Le parapluie tarifaire est 2,5 à 5 fois plus haut |
@@ -90,6 +96,12 @@ Toutes sont de moi, sauf mention. C'est le registre le plus utile du document.
 | **Plancher de coût : 25 à 35 € HT sans la presse, 100 à 120 € HT avec** | `B·3` | Calcul sur entrées sourcées, volume d'avis en cran D |
 | **Aucune plateforme n'offre un accès délégué complet.** Google seul est en jeton délégué, et son point d'accès aux avis serait inatteignable. Booking et Expedia lisent et répondent, mais par compte machine. TripAdvisor n'a aucun point de réponse et plafonne à 5 avis | `B·2`, sauf l'inaccessibilité Google en `C·3` | Documentations et témoignages de forum |
 | **L'administration ne peut pas opposer son droit de producteur sur ses données ouvertes** — c'est un droit, non une tolérance | `B·2` | Code des relations entre le public et l'administration |
+| **Soixante jours d'ancienneté** d'une fiche vérifiée, plus un site web, exigés avant tout dossier chez l'une des plateformes | `B·2` | Documentation officielle |
+| Les demandes d'accès y sont **officiellement suspendues depuis septembre 2026, sans nouvelle échéance** | `B·2` | Annonce officielle |
+| Le point d'accès aux avis n'est **pas déprécié — il est inactivable**, erreur de permission persistante même après approbation, trois demandeurs concordants | `C·2` | Forum officiel |
+| Une plateforme **exclut ce produit par principe** : « non acceptable — un outil utilitaire pour aider à publier sur les comptes que vous ou votre équipe gérez ». Mot pour mot notre objet | `B·2` | Conditions d'approbation |
+| Chez une autre, **un refus interdit de réessayer avec la même application** | `B·2` | Documentation officielle |
+| Une cinquième ne demande aucune approbation mais facture **0,200 $ par publication contenant un lien** — et un produit qui pousse un blog publie des liens | `B·2` | Grille tarifaire. **Poste absent du plan** |
 | **Avocat : il peut solliciter et recueillir des avis, il ne peut pas intégrer la note à sa communication.** La frontière est l'intégration, non l'avis. Aucune interdiction générale des témoignages de clients, à l'inverse exact du médecin | `B·2` | Cour de cassation, 1re civ., 11 mai 2017 et 22 mai 2019 |
 | La note publiée par un tiers est licite et l'Ordre n'a **aucune prise** sur ce tiers ; la faute naît quand l'avocat la reprend chez lui | `B·2` | Même jurisprudence, et règlement intérieur national |
 | **Ce qui est sanctionné est le faux témoignage, pas le témoignage** : la faute retenue est la fabrication — des commentaires laudatifs censés émaner de clients mais répétés en termes identiques | `B·2` | Avis déontologique d'un barreau, 2015 |
@@ -183,6 +195,12 @@ Le rapport produit porte le gabarit non rempli `<date du jeu>`. **L'obligation d
 ### La question que personne n'a posée
 
 Le document demande **qui construit**. Il ne demande jamais **qui maintient**. Or le coût de maintenance domine le coût de construction, et il est humain : 22 à 37 jours-personne par an, contre 450 à 700 € de serveur. Un rapport de dix contre un.
+
+### La leçon de méthode la plus coûteuse de la session
+
+> Le plan n'a pas manqué ces délais parce qu'ils étaient introuvables, mais **parce qu'une seule voie a été essayée.**
+
+Un lecteur a atteint **trois des cinq hôtes que les autres avaient déclarés refusés**, par un outil de recherche tiers — et **les quatre résultats décisifs viennent tous de là**. Un hôte déclaré refusé n'est donc pas un mur : c'est une voie non épuisée. La règle entre au journal de requêtes : **essayer au moins deux voies avant d'inscrire un refus.**
 
 ### Limite de méthode établie
 

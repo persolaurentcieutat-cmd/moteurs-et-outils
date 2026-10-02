@@ -107,7 +107,13 @@ La règle de la section 5 s'applique à partir des lecteurs du plan de construct
 |---|---|---|---|---|---|
 | Exécution du plan | **50** | 36 | 7 | 12 | 16 `A` sur sorties collées · **0 `B`** · 3 `C` dont 2 rétrogradées par lui-même · 3 `D` déclarées |
 
-**Zéro source primaire revendiquée, et c'est honnête** : il a mesuré au lieu de citer. C'est le premier retour de la session dont le comptage ne peut pas démentir le classement.
+| Calendrier externe | **38** | 24 | 7 | 7 | **27 adresses primaires pour 27 affirmations — écart zéro** · 3 `D` déclarées |
+
+**Zéro source primaire revendiquée par le premier, et c'est honnête** : il a mesuré au lieu de citer. Le second affiche un **écart nul**, a rétrogradé une de ses propres lignes contre son intérêt d'argumentation, et a corrigé quatre manquements trouvés par son propre audit mécanique. **La règle tient dès son premier jour d'application.**
+
+### La correction qui vaut pour tous les refus déjà inscrits
+
+Le lecteur du calendrier a atteint **trois des cinq hôtes déclarés refusés** par les autres, via un outil de recherche tiers, et **les quatre résultats décisifs de son retour viennent tous de là**. Conséquence : **un refus inscrit après une seule tentative n'est pas un refus.** Les refus de la section 4 sont à relire sous cet angle. Règle ajoutée : **deux voies au minimum avant d'inscrire un refus.**
 
 ### Hôtes refusés par ce lecteur — à ne pas réessayer
 

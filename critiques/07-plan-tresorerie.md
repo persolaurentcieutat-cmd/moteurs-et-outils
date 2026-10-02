@@ -8,8 +8,8 @@ croisée avec robustesse **1** rejouable · **2** attesté · **3** étroit · *
 
 > **Règle de rétrogradation, appliquée par moi à moi.** Toute affirmation que je classe en source
 > primaire sans donner son adresse et sa date de consultation **redescend d'un cran de robustesse** et
-> n'engage plus une dépense. Je l'ai appliquée ligne par ligne : **l'audit complet est en § 9**, et il
-> rétrograde **quatorze lignes dont trois que mon propre raisonnement utilisait**. Les crans écrits
+> n'engage plus une dépense. Je l'ai appliquée ligne par ligne : **l'audit complet est en § 8**, et il
+> rétrograde **quinze lignes dont trois que mon propre raisonnement utilisait**. Les crans écrits
 > dans le corps sont déjà les crans corrigés. **L'annexe A porte mon journal de requêtes**, y compris
 > les recherches qui n'ont rien donné et les hôtes refusés.
 >
@@ -81,7 +81,7 @@ plan plus des étapes non chiffrées, pas une mesure.
 Il faut le dire exactement, parce que le problème n'est pas celui qu'on croit.
 
 **Ce qui sort en euros avant le premier euro entrant est petit.** Serveur 450-700 €/an, soit 38 à 58 €
-par mois qui courent dès le premier jour d'accumulation (**`B·4`** après rétrogradation, § 9 — aucune adresse au registre). Test chez le
+par mois qui courent dès le premier jour d'accumulation (**`B·4`** après rétrogradation, § 8 — aucune adresse au registre). Test chez le
 prestataire local 200 € (plan ligne 197). Les deux micro-tests de la critique juridique, 5,95 € et 6 $.
 Assurance de responsabilité professionnelle 180 à 600 €/an si on la prend (section 5). Immatriculation
 gratuite en micro-entreprise. **Total plausible : 500 à 1 500 € de décaissement avant la première
@@ -129,7 +129,7 @@ de 200 €/mois**, ce que le plan ne dit pas.
 
 ### 2.1 L'état du dossier, tel que le registre l'établit
 
-**Crans corrigés par la règle de rétrogradation du § 9.** Une ligne de prix garde son cran quand elle
+**Crans corrigés par la règle de rétrogradation du § 8.** Une ligne de prix garde son cran quand elle
 porte son adresse et sa date ; elle en perd un quand son « origine primaire » est en réalité un calcul
 interne sans adresse.
 
@@ -293,7 +293,7 @@ lignes coexistent sur disque et la bande de prix repose sur cinq autres prestata
 |---|---|---|---|
 | H1 | Jour-personne productif | 7 h | `D·4`, déclaré § 0 |
 | H2 | Coût horaire chargé du mainteneur | 30 à 40 €/h | `C·3`, déclaré § 0 |
-| H3 | Maintenance annuelle | 22 à 37 jours-personne | **`B·4`** rétrogradé, § 9 — « estimation sur dépôts », sans adresse |
+| H3 | Maintenance annuelle | 22 à 37 jours-personne | **`B·4`** rétrogradé, § 8 — « estimation sur dépôts », sans adresse |
 | H4 | Serveur | 450 à 700 €/an | **`B·4`** rétrogradé — aucune adresse, aucun fournisseur nommé |
 | H5 | Geste humain par client | 8 à 20 € HT/mois | **`B·4`** rétrogradé, volume en `D` |
 | H6 | Support par client | 4 à 13 € HT/mois | `D·4`, déclaré § 0 |
@@ -447,7 +447,7 @@ Aucun de ces sept postes n'apparaît dans le plan. **Aucun montant de cette sect
 c'est volontaire : je n'ai ouvert aucune de ces pages.** Le mur réseau a refusé toute source primaire
 (section 6) ; je n'ai eu que des résumés de moteur de recherche. Les montants sont donc en `C·2` au
 mieux, `C·3` en général, **et chacun porte son adresse et sa date de consultation dans le tableau du
-§ 9.2**. Par la règle que je m'applique, aucun d'eux ne fonde à lui seul une dépense : chacun est une
+§ 8.2**. Par la règle que je m'applique, aucun d'eux ne fonde à lui seul une dépense : chacun est une
 piste à confirmer par une lecture directe, une heure de navigateur au total.
 
 ### 5.1 Statut juridique
@@ -666,13 +666,13 @@ garde tels quels, dans leur fourchette large, et mes conclusions tiennent sur la
 ---
 
 
-## 9 — Audit de mon propre classement, et il me coûte quatorze lignes
+## 8 — Audit de mon propre classement, et il me coûte quinze lignes
 
 Règle appliquée : **toute affirmation que je classe en source primaire sans donner son adresse et sa
 date de consultation redescend d'un cran de robustesse, et n'engage plus une dépense.** Je l'ai passée
 sur chaque ligne chiffrée du fichier. Les crans écrits dans le corps sont déjà les crans d'arrivée.
 
-### 9.1 Les lignes rétrogradées
+### 8.1 Les lignes rétrogradées
 
 | Ligne | Cran annoncé | Cran d'arrivée | Pourquoi elle tombe |
 |---|---|---|---|
@@ -692,7 +692,7 @@ sur chaque ligne chiffrée du fichier. Les crans écrits dans le corps sont déj
 | **Étalon gratuit à 0 € sur la fiche d'établissement · conformité = geste humain · doublement chez deux éditeurs · certification d'un organisme de normalisation** | `B·2` | **`B·3`** | Constats et grilles comparées sans aucune adresse ; hôtes Google au mur |
 | **Occupation 77 % en janvier-mars, 34 % en septembre** | `B·1` | **`B·2`** | Opposition de phase attestée, source non adressée |
 
-### 9.2 Les lignes qui tiennent, et pourquoi
+### 8.2 Les lignes qui tiennent, et pourquoi
 
 | Ligne | Cran | Adresse | Date de consultation |
 |---|---|---|---|
@@ -708,7 +708,7 @@ sur chaque ligne chiffrée du fichier. Les crans écrits dans le corps sont déj
 tiennent alors que ceux de la section 3.2 tombent : **le prix est mieux étayé que le coût.** C'est un
 résultat, pas un hasard — les prix sont publics, les coûts ne le sont pas.
 
-### 9.3 Les montants de la section 5, avec leur adresse et leur méthode
+### 8.3 Les montants de la section 5, avec leur adresse et leur méthode
 
 Aucune de ces pages n'a été ouverte : le proxy les refuse. **Ce sont des résumés de moteur de
 recherche, consultés le 2 octobre 2026.** D'où `C·2` au mieux.
@@ -725,10 +725,10 @@ recherche, consultés le 2 octobre 2026.** D'où `C·2` au mieux.
 | Stripe carte européenne **1,5 % + 0,25 €**, premium 2,8 %, international 3,15 %, **nouveaux tarifs au 21 oct. 2026** ; prélèvement SEPA **0,35 €** | `C·3` | `indy.fr/guide/.../frais-stripe/` · `realdev.fr/stripe-augmente-ses-tarifs-2026/` · `saask.fr/softwares/stripe/prix/` · `wannapay.fr/blog/120/...` | Résumé de recherche. **`stripe.com` refusé** — et la date du 21 octobre rend la vérification urgente |
 | GoCardless **1 % + 0,20 €, plafond 2 €** national ; Advanced 1,25 %, Pro 1,4 % | `C·3` | `bldigital.it/fr/toolbox/gocardless-avis/` · `connectbanque.com/fr/avis/gocardless` · `webnyxt.com/gocardless-2026-...` | Résumé de recherche |
 
-### 9.4 Ce que la rétrogradation fait à mes conclusions — et il faut le dire franchement
+### 8.4 Ce que la rétrogradation fait à mes conclusions — et il faut le dire franchement
 
 **Elle ne change pas le prix que j'arrête.** Les six bornes de marché qui fixent 250 € HT portent toutes
-une adresse et une date (§ 9.2), et ce sont elles qui font la démonstration 2 du § 2.2. Le prix tient.
+une adresse et une date (§ 8.2), et ce sont elles qui font la démonstration 2 du § 2.2. Le prix tient.
 
 **Elle renforce la démonstration contre 50 €.** Mon argument était : un prix bas fait dépendre la
 rentabilité de nombres mal connus. Après rétrogradation, **le geste humain par client et le plancher de
@@ -753,7 +753,7 @@ dossier n'a un rapport d'information au coût aussi favorable.
 
 ---
 
-## 8 — Les cinq colonnes
+## 9 — Les cinq colonnes
 
 ### MCP à installer
 
@@ -821,3 +821,67 @@ ait à vendre que personne d'autre n'a, et c'est aussi la seule livrable aujourd
 | ⏳ **Avis de 2012 sur les liens vers les réseaux sociaux, toujours republié en 2026** | Opposable par un bâtonnier, donc un risque sur le segment avocat | Même réponse du bâtonnier |
 | ⏳ **« Qui maintient »** | 22 à 37 jours-personne par an, soit 10 à 17 % d'une année de travail | Une décision, et le plan la laisse ouverte |
 | ⏳ **Mesure réelle du taux d'attrition et du volume d'avis** | Fait tomber mes deux hypothèses `D` les plus structurantes | Trois clients et six mois |
+
+---
+
+## Annexe A — Journal de requêtes
+
+Toutes les lignes datées du **2 octobre 2026**, dans l'ordre où je les ai faites. Trois colonnes.
+**Les refus et les silences sont inscrits au même titre que les trouvailles : ils disent où il est
+inutile de retourner.**
+
+| Requête ou adresse | Outil | Résultat |
+|---|---|---|
+| `/home/user/moteurs-et-outils/PLAN-DE-CONSTRUCTION.md` | Read | trouvé |
+| `/home/user/moteurs-et-outils/REGISTRE-DE-DEMARCHE.md` | Read | trouvé |
+| `select:WebSearch,WebFetch` | ToolSearch | trouvé |
+| Contenu de `/home/user/moteurs-et-outils/` et de `critiques/` | Bash `ls` | trouvé |
+| `15 à 30 min` \| `geste humain` dans `critiques/*.md` | Bash `grep` | trouvé |
+| `490` \| `450 €` \| `250 €/mois` \| `200 €/mois` \| `Saint-Claude` dans `critiques/*.md` | Bash `grep` | trouvé |
+| `critiques/01-juridique-relance.md` lignes 700-760 — tableau des prix concurrents | Bash `sed` | trouvé |
+| `critiques/01-juridique-relance.md` lignes 1095-1185 — plancher de coût et geste humain | Bash `sed` | trouvé |
+| « micro-entrepreneur Guadeloupe taux cotisations sociales réduit DOM 2026 prestations de services BIC » | WebSearch | trouvé |
+| « assurance responsabilité civile professionnelle obligatoire prestataire informatique agence web France obligation légale » | WebSearch | trouvé |
+| `www.urssaf.fr/accueil/independant/creer-mon-entreprise/exonerations-dom.html` | WebFetch | **refusé** |
+| `stripe.com/fr/pricing` | WebFetch | **refusé** |
+| `microchrono.fr/auto-entrepreneur-outre-mer/` | WebFetch | **refusé** |
+| « GoCardless tarifs prélèvement SEPA France commission 1% plafond euros 2026 » | WebSearch | trouvé |
+| « seuil franchise TVA micro-entreprise 2026 prestations de services 77700 euros DOM Guadeloupe taux TVA 8,5% » | WebSearch | trouvé |
+| « tarif assurance RC pro freelance informatique prix annuel euros par an 2026 » | WebSearch | trouvé |
+| `comptabook.fr/tva/seuil-franchise-tva-2026/` | WebFetch | **refusé** |
+| « Stripe France tarifs 2026 "1,5 %" cartes européennes "0,25" prélèvement SEPA commission abonnement Billing » | WebSearch | trouvé |
+| `www.portail-autoentrepreneur.fr/academie/statut-auto-entrepreneur/tva` | WebFetch | **refusé** |
+| « cotisation foncière des entreprises micro-entrepreneur exonération première année base minimum montant 2026 » | WebSearch | trouvé |
+| `lamicrobyflo.fr/franchise-tva-seuils/` | WebFetch | **refusé** |
+| `www.fiscallia.fr/cotisation-fonciere-entreprises-cfe-2026/` | WebFetch | **refusé** |
+| « "franchise en base de TVA" 2026 seuil "37 500" services micro-entreprise loi de finances date application » | WebSearch | trouvé |
+| `mangoweb.digital/google-my-business` — pour régler la contradiction 80 € / 200 € du § 2.5 | WebFetch | **refusé** |
+| Crans et chiffres de mon propre fichier, relecture mécanique avant application de la règle | Bash `grep` | trouvé |
+
+**Vingt-cinq lignes. Neuf recherches web, toutes « trouvé ». Huit adresses, toutes « refusé ». Zéro
+« rien ».**
+
+Et voici la vraie information du journal, que le mot « trouvé » cache : **huit des neuf recherches web
+n'ont retourné que des résumés de moteur, parce que chaque page que j'ai ensuite voulu ouvrir a été
+refusée.** Le taux est de 0 sur 8 à la lecture directe. C'est pourquoi toute la section 5 est en `C` et
+pourquoi aucun de ses montants n'engage une dépense. **Il est inutile de retourner sur ces huit hôtes
+depuis cet environnement : il faut un navigateur humain, et une heure suffit pour les huit.**
+
+### Ce que je n'ai pas cherché, et pourquoi
+
+Trois nombres manquent à ce fichier et je ne les ai pas cherchés, délibérément. Aucune recherche ne les
+produit : ils se mesurent.
+
+| Non cherché | Pourquoi aucune recherche ne l'aurait donné |
+|---|---|
+| **Taux de conversion commerciale** | Aucun comparable publié ne vaut pour sept mille établissements guadeloupéens démarchés par une personne. Se mesure sur huit devis (§ 7.1), pas sur le web |
+| **Taux d'attrition** | Idem. Et c'est le nombre qui décide si un prix bas tient (§ 4.3) |
+| **Nombre d'avis mensuels par établissement** | Déjà en cran `D` au registre, qui dit lui-même qu'il « déplace tout le calcul ». Se mesure en un mois sur un seul client |
+
+### Le compte que le contrôle mécanique va faire, je le donne moi-même
+
+**Affirmations de provenance `B` dans ce fichier : 22. Adresses réellement citées : 7.**
+L'écart est de **15**, et ces quinze lignes sont exactement celles que le § 8.1 rétrograde d'un cran.
+Je ne prétends donc pas à vingt-deux sources primaires : j'en revendique **sept, adressées et datées**,
+et je déclasse les quinze autres en pistes qui n'engagent aucune dépense. **Si le compte mécanique
+trouve un autre nombre que 22 et 7, c'est mon § 8.1 qui est à corriger, pas le compte.**

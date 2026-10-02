@@ -444,3 +444,183 @@ Les prix sont `D` — aucune page de tarif atteignable depuis cet environnement.
 **Tunnel** : tout le reste. Les phases 2, 3 et 4 n'ont **aucune date**, le document n'en contient aucune ; la règle d'arrêt du mandat énonce « une date, pas une condition » et laisse le champ vide ; la seule « porte de sortie » nommée ouvre sur une plateforme dont le plan a prouvé qu'elle n'existe pas ; les cinq seuils d'abandon ne portent pas un seul couple et aucun ne peut se déclencher en l'état ; aucun critère n'arrête **le projet** ; et le principe qui commande toute la forme du plan est mesuré sur un bouchon de dix-sept lignes que le projet a écrit lui-même.
 
 **Ce n'est pas un plan malhonnête — son code est honnête et ses chiffres se reproduisent. C'est un plan qui a confondu l'inventaire de ses preuves avec un calendrier.** Six dates et un prix le rendraient exécutable en entier. Il n'en a aucun.
+
+---
+---
+
+# Addendum — La sanction de sourçage appliquée au plan
+
+Ajouté le 2 octobre 2026 sur obligation du conducteur, après lecture intégrale de `REGISTRE-DE-RECHERCHE.md`.
+Le fait nouveau m'est favorable, puisque mon angle est la cohérence. Je l'applique sans ménagement, **y compris à mes propres conclusions du §3**, qui en souffrent.
+
+**Rappel de la sanction, citée** (`REGISTRE-DE-RECHERCHE.md`, §2 et §5.2) :
+> « toute affirmation en source primaire **sans adresse ni date redescend d'un cran de robustesse**. Elle reste utilisable comme piste, **elle n'engage plus une dépense**. »
+
+Et la mesure qui la motive, §2 : 56 affirmations en source primaire pour 48 adresses, avec « `02-marche.md` | 4 | **0** » · « `02-marche-liberal.md` | 0 déclaré, mais cite un code déontologique textuellement | **0** | **Citation littérale sans sa source** » · « `01-juridique-relance.md` | 15 | **1** ».
+
+---
+
+## A.1 — Une trouvaille qui précède l'application de la sanction : les douze retours n'ont jamais utilisé le barème
+
+Avant de sanctionner, j'ai voulu savoir **qui avait attribué les couples du plan**. Comptage mécanique sur les onze fichiers de `critiques/01` à `critiques/05`, `A·1`, commande rejouable :
+
+```
+for f in critiques/0[1-5]*.md; do
+  echo "$(basename $f) | cranB=$(grep -oi 'cran B' $f|wc -l) | couples=$(grep -ohE '\b[ABCD]·[0-9]' $f|wc -l) | adresses=$(grep -ohE 'https?://[^ )"]+' $f|sort -u|wc -l)"
+done
+```
+
+| Fichier | « cran B » (un axe) | Couples à deux axes | Adresses | Heure |
+|---|---|---|---|---|
+| `01-juridique.md` | **30** | **0** | 32 | 19:26 |
+| `01-juridique-relance.md` | **20** | **0** | 1 | 19:45 |
+| `02-marche.md` | 4 | **0** | 0 | 19:21 |
+| `02-marche-relance.md` | 0 | **0** | 2 | 19:31 |
+| `02-marche-liberal.md` | 0 | **0** | 0 | 19:47 |
+| `03-methode.md` | 5 | **0** | 4 | 19:27 |
+| `03-methode-relance.md` | 4 | **0** | 3 | 19:53 |
+| `04-doctrine.md` | 6 | **0** | 1 | 19:22 |
+| `04-doctrine-gabarit.md` | 0 | 4 | 0 | 19:39 |
+| `04-doctrine-reparation.md` | 1 | **26** | 0 | 19:31 |
+| `05-technique.md` | 2 | **0** | 5 | 19:47 |
+
+**Résultat : sur les trente occurrences du barème à deux axes dans tout le corpus de critique, trente sont dans les deux fichiers de doctrine. Les neuf retours de fond — droit, marché, méthode, technique — en contiennent zéro.** Ils portent 65 mentions de « cran B », c'est-à-dire **l'ancien barème à un seul axe**, celui dont le registre consigne le renversement : « “Le barème A B C D suffit” | Doctrine, `B·1` | **Un axe pour deux questions** » (registre L.49).
+
+Et la chronologie l'aggrave : le barème est réparé à **19:31** (`04-doctrine-reparation.md`). **Quatre fichiers sont écrits après** — `04-doctrine-gabarit` 19:39, `01-juridique-relance` 19:45, `02-marche-liberal` et `05-technique` 19:47, `03-methode-relance` 19:53 — et **aucun des quatre retours de fond postérieurs n'emploie le barème.** Il a été inventé, puis jamais adopté, y compris par les lecteurs relancés après son invention.
+
+**Conséquence pour mon angle, et elle est structurelle.** Les 32 couples du `PLAN-DE-CONSTRUCTION.md` ne viennent pas des lecteurs. Aucun lecteur de fond n'a écrit « `B·2` » une seule fois. **Ils ont donc été attribués après coup par le producteur du plan, à des affirmations écrites par d'autres, dans une notation que leurs auteurs n'employaient pas.** La chaîne complète est :
+
+> un lecteur écrit « cran B », sans adresse (mesuré : 56 pour 48, et 0 adresse dans deux fichiers)
+> → le producteur convertit en « `B·2` » dans le plan
+> → la règle du plan L.6 statue : « `1` et `2` **portent une décision** »
+
+**Deux conversions, dont aucune n'a été faite par l'auteur de l'affirmation, transforment une prose non sourcée en ligne porteuse de décision.** Et le skill `conduite-par-vagues` a précisément prévu le remède, qu'il nomme et que le plan n'a pas appliqué : « **L'écart** — la relance de preuve ne part plus avec l'agent : **un relecteur note les couples lui-même et publie l'écart avec l'autoclassement. L'écart mesure le barème, pas l'agent** » (registre L.28). L'écart n'a jamais été publié sur les couples : il vient de l'être sur les adresses, et il manque encore sur les crans. Je le publie ci-dessus, et il vaut **zéro sur neuf**.
+
+Je crédite une chose, pour être exact : l'unique `D·1` du corpus, dans `04-doctrine-reparation.md`, est un **contre-exemple pédagogique** — « Un agent qui écrit `D·1` a confondu “j'en suis sûr” avec “un tiers peut refaire” » — non une faute. Je ne le compte pas contre le fichier.
+
+---
+
+## A.2 — La sanction appliquée, ligne par ligne
+
+Attribution mécanique de chaque `B·2` du plan à son fichier d'origine, par recherche de ses chaînes distinctives — `A·1`, rejouable par `grep -l "<motif>" critiques/*.md`.
+
+| Ligne du plan | Ce qu'elle affirme | Fichier d'origine (motif trouvé) | Adresses du fichier | Après sanction |
+|---|---|---|---|---|
+| L.50 | Les publications sont obligatoires par la loi | `01-juridique.md` | **32** | **`B·2` tient** |
+| L.51 | Le droit des producteurs est cédé par écrit dans la licence | `01-juridique.md` (« sui generis ») | **32** | **`B·2` tient** |
+| L.52 | « L'administration ne peut pas s'y opposer » | `01-juridique-relance.md` + `02-marche-liberal.md` (« relations entre le public ») | **1** et **0** | **tombe → `B·3`** |
+| L.81 | **Bande vide entre 30 € et 200 €/mois** | `01-juridique-relance.md` (« 30 € et 200 », « 200 €/mois », « 450 € ») | **1** | **tombe → `B·3`** |
+| L.83 | 52,50 € HT de licence presse, déjà `B·3` | `01-juridique-relance.md` (« 52,50 ») | **1** | **tombe → `B·4` → « va au dépôt »** |
+| L.103 | Verdict de licence copyleft réseau, « trois plateformes, pas trente » | `05-technique.md` | 5 | **`B·2` tient** |
+| L.113 | Republier un article : 50 à 150 € HT, compté double | `01-juridique-relance.md` (« 50 à 150 ») | **1** | **tombe → `B·3`** |
+| L.124 | Le volet avis est le seul à exiger un mandat signé | famille `02-marche*` | **0** et **0** | **tombe → `B·3`** |
+| L.125 | Aucune plateforme n'offre d'accès délégué complet | `02-marche-relance.md` (adresses `mybusiness*.googleapis.com`) | 2, **pertinentes** | **`B·2` tient** |
+| L.139 | Collecte par message mobile = contournement, **art. 10.3** | `02-marche-liberal.md` (« 10.3 ») | **0** | **tombe → `B·3`** |
+| L.141 | Annoncer un taux de succès est une faute disciplinaire | `02-marche-liberal.md` (« taux de succès ») | **0** | **tombe → `B·3`** |
+| L.145 | **La santé est fermée** — témoignages de tiers proscrits | `02-marche-liberal.md` (« témoignages de tiers ») | **0** | **tombe → `B·3`** |
+| L.147 | Avocat : la frontière est l'intégration de la note — Cass. 2017 et 2019 | `02-marche-liberal.md` (« 11 mai 2017 », « 22 mai 2019 ») | **0** | **tombe → `B·3`** |
+| L.159 | Jeu d'épreuve guadeloupéen à 25-40 jours-personne | `05-technique.md` (« 25 à 40 jours ») | 5 | **tient, mais c'est un calcul, pas une source** |
+| L.30 | « Les textes ne nomment jamais “avis en ligne” » | `02-marche-liberal.md` | **0** | **tombe → `B·3`** |
+
+**Bilan arithmétique. Neuf des quatorze `B·2` du plan tombent. Un `B·3` tombe en `B·4`, donc au dépôt.** Les couples porteurs de décision passent de **27 sur 32** (13 `A·1` + 14 `B·2`) à **18 sur 32**. En y ajoutant les deux `A·1` que j'ai détruits au §0 et au §1 — le 403 mesuré sur un bouchon local, et le badge emprunté de L.71 — **il reste 16 lignes porteuses de décision sur 32. La moitié exactement.**
+
+### Et la convergence « la plus précieuse de la session » tombe à trois quarts
+Les quatre obligations réglementaires (plan L.59-64, registre L.112-117) s'attribuent ainsi :
+— *Mentionner source et date* → `relations entre le public`, dans `01-juridique-relance` (1 adresse) et `02-marche-liberal` (0) → **tombe**
+— *Transmettre à l'Ordre sans délai* → `02-marche-liberal.md`, motif « sans délai au conseil », **0 adresse** → **tombe**
+— *Surveiller les liens sortants, art. 10.5* → `02-marche-liberal.md`, **0 adresse** → **tombe**
+— *Prouver qu'un témoignage n'est pas fabriqué* → `02-marche-liberal.md` → **tombe**
+
+**Les quatre piliers de la convergence que le registre appelle « la convergence la plus précieuse de la session, et elle s'est renforcée à chaque tour » (L.110) proviennent tous de fichiers à zéro ou une adresse, et trois des quatre du même fichier : celui dont l'audit dit qu'il « cite un code déontologique textuellement » sans sa source.** Dans le plan, ces quatre lignes ne portaient déjà aucun couple (mon §1). Après sanction, elles n'ont plus de cran du tout. L'argument central de vente du projet repose sur un fichier sans une seule adresse.
+
+Je note, et c'est cohérent avec mon §5.2 par un chemin entièrement différent : j'avais dissous cette convergence en comptant **à qui** appartiennent les obligations. La sanction la dissout en comptant **d'où** elles viennent. Deux mécanismes indépendants, même résultat. C'est le fait le plus solide de ce fichier.
+
+---
+
+### Un trou dans l'audit lui-même
+Le tableau de `REGISTRE-DE-RECHERCHE.md` §2 nomme dix fichiers et **omet `02-marche-relance.md`** : 4+0+15+13+2+9+13 = 56, le total y est, et ce fichier n'y est pour rien. Or c'est lui qui porte **« 3,5 à 5,2 % du marché adressable solvable (507 à 760 sur 14 582) »** (`02-marche-relance.md` L.253) — l'un des renversements les plus décisifs du registre (L.53), celui qui retire à la Guadeloupe son statut d'avantage produit. Mesure : ce fichier porte **2 adresses**, toutes deux des points d'accès `googleapis.com`, **aucune statistique**. Le chiffre qui a renversé la thèse centrale du projet n'a donc **aucune adresse derrière lui et n'est pas passé par l'audit**. Par la sanction, il descend lui aussi — ce qui affaiblit mon propre §5.1, qui s'en sert. Je le dis parce que l'audit ne le dit pas : **un contrôle mécanique qui oublie un fichier oublie exactement ce qu'il devait attraper.** La commande du §6 doit porter sur `critiques/*.md` sans exception, et publier la liste des fichiers vus.
+
+## A.3 — Ce que la sanction coûte à mes propres conclusions
+
+La règle s'applique à moi, et elle me coûte précisément ceci.
+
+**Mon critère d'abandon global (§3) descend d'un cran.** Il est construit sur quatre entrées, dont deux tombent : la bande vide 30-200 € (plan L.81 → `B·3`) et, par capillarité, le plancher de coût 25-35 € HT (déjà `B·3` avec un composant `D`, registre L.84). Mon arithmétique — 154 à 259 heures, 1 896 à 3 188 €, 11 à 18 clients à 150 € — ne change pas, mais **le prix de référence qui la calibre n'est plus porteur**. Mon critère reste : il ne porte plus seul une décision de dépense.
+
+**Mon §5.2, en revanche, tient.** Il est bâti sur registre L.81 (« réintroduire la validation humaine coûte le double chez deux éditeurs », source « Grilles tarifaires comparées ») et L.56. Les deux viennent des fichiers de droit relancés, à une adresse. **Donc non, il ne tient pas intégralement : l'attaque 1 descend à `B·3` elle aussi.** Ce qui tient sans réserve, c'est l'attaque 3 — la dissolution de la convergence par la question « à qui appartient l'obligation » — parce qu'elle ne s'appuie sur aucune source extérieure : elle est un raisonnement sur le texte du plan, que n'importe qui rejoue en relisant L.59-64. `B·2`, passage cité, et la sanction ne l'atteint pas.
+
+**Ce que la sanction ne m'enlève pas, et c'est l'essentiel : mes `A·1`.** Le 403 codé en dur dans `banc/bouchon_plateformes.py`, les quatre `licence_lue_le = null`, l'absence de garde dans `cmd_collecte`, les 21 assertions sur `127.0.0.1`, les 32 couples et zéro date du plan, le zéro couple des neuf retours de fond. **Une mesure n'a pas besoin d'adresse : elle a une commande.** C'est la propriété qui décide de la réponse à la question suivante.
+
+**Et mon statut de source primaire, que je revendique explicitement.** Je ne cite aucune adresse web dans tout ce fichier, et c'est conforme : le registre de recherche accorde lui-même cette exception, « `04-doctrine*.md` | 13 | 1 | **Légitime** : sa source primaire est le document attaqué, pas le web ». Mon angle est interne ; ma source primaire est le dépôt. **À la place de l'adresse, je donne le numéro de ligne exact du passage attaqué, dans un fichier versionné.** C'est plus rejouable qu'une URL, qui bouge. Je demande que la règle inscrive cette équivalence, sinon elle punit mécaniquement les lecteurs de cohérence pour avoir travaillé sur le bon objet.
+
+---
+
+## A.4 — La sanction est-elle tenable, ou est-elle un frein ?
+
+Réponse en trois temps. **Elle est tenable, bon marché, et elle ne vide pas le plan — à une condition, et appliquée sans cette condition elle devient non pas un frein mais un danger.**
+
+### 1. Elle ne vide pas le plan, parce que la partie exécutable du plan ne contient aucune adresse
+Regardons ce qui survit : les **13 `A·1`**, qui sont tous des mesures sur le dépôt (socle, schéma, déclencheurs, fuseau, créole, dépouillement des licences SPDX dans les forges), et les **deux gestes gratuits de la semaine 0** (test Google à 0 €, question au bâtonnier à 0 €). Une mesure et une question gratuite n'ont pas besoin d'adresse. **La phase 1 et la semaine 0 traversent la sanction sans une égratignure.**
+
+Ce qui tombe : la bande de prix, la licence presse, le coût de republication, les sept lignes de droit disciplinaire, le mandat comme spécificité du volet avis, les quatre obligations. C'est-à-dire **exactement les deux volets dont le registre avait déjà écrit, avant toute sanction : « Zéro `A` sur tout le volet marché et tout le volet juridique. Les deux agents le déclarent eux-mêmes » (L.159).**
+
+**La sanction ne détruit donc rien que le registre ne savait pas déjà. Elle le rend arithmétique.** C'est son plus grand mérite et la preuve qu'elle n'est pas un frein : elle ne retire au plan aucune capacité d'agir qu'il possédait. Les décisions qu'elle désarme — fixer un prix, vendre la presse, promettre la conformité — étaient de toute façon indécidables, puisque le plan **n'arrête aucun prix** et **ne porte aucune date** (mes §4.5 et §1). On ne freine pas une voiture arrêtée.
+
+### 2. Appliquée symétriquement, elle est dangereuse — et c'est le vrai risque, pas la paralysie
+**Des neuf `B·2` qui tombent, six sont des interdictions**, non des autorisations : la santé fermée (L.145), le contournement par message mobile (L.139), le taux de succès (L.141), l'intégration de la note (L.147), la réserve du bâtonnier (L.30), l'exigence de mandat (L.124). Seules trois sont économiques (L.81, L.113, L.52).
+
+Si « ne porte plus une décision » se lit symétriquement, alors « on ne vend pas de gestion d'avis à un médecin » **n'est plus une décision**, et le plan devrait, en toute rigueur, lever l'interdiction en attendant la preuve. C'est absurde, et c'est plus qu'absurde : la sanction convertirait un audit de sourçage en **permis de faire la chose interdite**, dont le prix n'est pas un euro mal placé mais une faute disciplinaire chez le client — « Un générateur de texte sans garde-fous métier **produit une faute** » (plan L.141). **Le coût d'une interdiction gardée à tort est nul ; le coût d'une interdiction levée à tort est le client.** L'asymétrie n'est pas une commodité, c'est le rapport des coûts.
+
+Et une application symétrique reconstituerait exactement le verrou que la session avait dissous : « **“Le temps 6 prouve, le temps 3 décide”** — la formule qui dissout le verrou : **exiger la preuve de la fin pour autoriser le début bloquait tout** » (registre L.22). Exiger une adresse pour conserver une prudence, c'est la même faute dans l'autre sens.
+
+### 3. La règle qui rend la sanction tenable, et le registre en porte déjà la graine
+Je ne propose pas d'adoucir la sanction. Je propose d'en écrire la portée, en une phrase que le registre a presque déjà écrite :
+
+> **La descente d'un cran s'applique à toute ligne qui AUTORISE — une dépense, un prix, une promesse au client, un développement. Elle ne s'applique pas à une ligne qui INTERDIT ou qui ARRÊTE : une interdiction et un seuil d'abandon sont utilisables au cran 3, parce que le coût de s'abstenir à tort est borné et celui d'agir à tort ne l'est pas.**
+
+La graine est au registre L.159, écrite par le projet et jamais transformée en règle : « **Rien là ne fonde une décision de construire, seulement l'abandon de ce qui est faux.** » C'est mot pour mot l'asymétrie. Il suffisait de la promouvoir au rang de règle du barème.
+
+Deux corollaires, gratuits :
+— **Le numéro de ligne vaut l'adresse** pour une source primaire interne au dépôt (voir A.3), sinon la règle punit le seul angle qui travaille sur le bon objet.
+— **Un calcul n'est pas une source.** Les deux `B·2` qui survivent en portant un calcul — L.159 (25-40 jours-personne, « Calcul statistique ») et le plancher de coût — devraient porter un cran de calcul, pas un cran de source. Le barème n'a pas de case pour « dérivé », et c'est son trou le plus discret : un calcul juste sur une entrée fausse porte le cran de l'entrée, jamais celui de l'opération.
+
+### Verdict de l'addendum
+**La sanction est juste, mécanique, bon marché, et elle n'empêche rien d'exécutable.** Elle coûte au plan neuf `B·2` sur quatorze, et au projet son argument de vente central — ce qui est une bonne nouvelle, parce que cet argument était déjà creux pour une raison indépendante (§5.2). Elle ne rend pas le plan inexécutable : **elle confirme, chiffre en main, que la partie exécutable du plan est celle qui repose sur des mesures et sur des actions gratuites, et que tout le reste attendait déjà des dates et un prix qu'il n'a pas.**
+
+Elle deviendrait un frein, et pire qu'un frein, dans un seul cas : appliquée aux interdictions. **Ne l'appliquez pas aux interdictions.**
+
+Et le geste qui répare le plus pour le moins cher reste le même, désormais chiffré : des **quarante-huit adresses** déjà atteintes, aucune ne concerne `02-marche-liberal.md`, d'où viennent sept lignes du plan et trois des quatre piliers de sa convergence. **Rouvrir une seule page — le règlement intérieur national sur le site d'un ordre, dont le registre de recherche dit qu'il “republie le texte intégral d'un règlement, avec sa jurisprudence annotée” (§4) — remonte sept lignes du plan d'un cran, pour zéro euro et une demi-heure.** C'est, de tout ce que j'ai à proposer, le meilleur rapport entre ce que ça coûte et ce que ça rend.
+
+---
+
+## Annexe — Journal de requêtes
+
+2 octobre 2026. Outils : `Read`, et `Bash` (`grep`, `find`, `wc`, `sed`, `python3`, `sqlite3` via `python3`).
+**Aucune requête réseau. Aucun hôte tenté. Zéro adresse web dans ce fichier.** Mon angle est la cohérence interne : ma source primaire est le dépôt, et je cite des numéros de ligne au lieu d'URL (voir A.3). Le journal est court, et c'est le bon résultat.
+
+| # | Cherché | Outil | Résultat |
+|---|---|---|---|
+| 1 | `PLAN-DE-CONSTRUCTION.md`, intégral | Read | trouvé |
+| 2 | `REGISTRE-DE-DEMARCHE.md`, intégral | Read | trouvé |
+| 3 | `conduite-par-vagues/SKILL.md` | Bash cat | trouvé |
+| 4 | `registre-de-demarche/SKILL.md` | Bash cat | trouvé |
+| 5 | Inventaire racine et `critiques/` | Bash ls | trouvé |
+| 6 | Contenu et volumétrie de `socle/` | Bash find + wc | trouvé |
+| 7 | Combinaison de fichiers donnant 1 183 lignes | Bash python3 | **trouvé** — reproduit exactement, lignes non vides de six fichiers |
+| 8 | `verifier.py` sans argument | Bash python3 | trouvé — aide, et les trois contrôles décrits |
+| 9 | `verifier.py --toutes` | Bash python3 | **trouvé** — `PROUVEES 21/21 = 100.0 %` |
+| 10 | Tables de `socle.db` | Bash python3+sqlite3 | trouvé — 18 tables |
+| 11 | Table `source` : quelles sources en base | Bash python3+sqlite3 | **trouvé** — une seule, `http://127.0.0.1:8731/` |
+| 12 | Table `capture`, colonne `url` | Bash python3+sqlite3 | **rien** — colonne inexistante, requête fautive de ma part, non réessayée |
+| 13 | `licence_lue_le` des sources retenues | Bash python3 | **trouvé** — quatre sur quatre à `null` |
+| 14 | Déclencheurs et date d'expérience dans `schema.sql` | Bash grep | trouvé — 4 déclencheurs, L.63/105/192/306 |
+| 15 | Garde sur `licence_lue_le` dans le code | Bash grep | **trouvé qu'il n'y en a pas** — aucune clause, aucun déclencheur |
+| 16 | `cmd_collecte` dans `socle.py` | Bash sed | trouvé — L.207-208, `WHERE actif=1 AND verdict<>'ecarte'` |
+| 17 | `banc/bouchon_plateformes.py` | Bash cat | **trouvé** — 403 et son message codés en dur |
+| 18 | Points d'entrée de `publier.py` | Bash sed | trouvé — `127.0.0.1:8899` |
+| 19 | `rapport-2026-S40.md` | Bash head + grep | **trouvé** — 21 assertions, toutes `127.0.0.1:8731` |
+| 20 | Couples et dates calendaires dans le plan | Bash grep | **trouvé** — 32 couples, **zéro date** |
+| 21 | `REGISTRE-DE-RECHERCHE.md`, intégral | Bash cat | trouvé |
+| 22 | Attribution de dix motifs du plan aux fichiers de critique | Bash grep -l | trouvé — base de la table A.2 |
+| 23 | « cran B » / couples / adresses, par fichier | Bash grep + wc | **trouvé** — zéro couple dans les neuf retours de fond |
+| 24 | Les `D·1` du corpus, en contexte | Bash grep -o | trouvé — contre-exemple pédagogique, pas une faute |
+| 25 | Hôtes web, pages de tarif, textes de licence, sources guadeloupéennes | — | **non tenté.** Hors de mon angle, et refusé par la politique réseau pour tous les lecteurs précédents. Je n'ai donc levé aucun mur, et je le dis plutôt que de le laisser croire |
