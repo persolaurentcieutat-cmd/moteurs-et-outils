@@ -254,3 +254,135 @@ Le point faible, nommé : **je n'ai pas lu la Fiche n° 4 du vade-mecum du CNB**
 ---
 
 *Fin. Aucun commit. `00-PROMPT-DE-LANCEMENT.md`, `critiques/02-marche.md` et `critiques/02-marche-relance.md` non modifiés.*
+
+---
+---
+
+# ADDENDUM — Les vingt pages manquantes, et la correction du protocole
+
+**Ajouté le 2 octobre 2026.** Deux objets : lever D23 (les avis de clients pour les avocats), et réécrire le bloc « avis » du protocole de test, dont le coordinateur a retiré à juste titre l'observation par dépôt d'un avis.
+
+## A. Correction de principe acceptée, avant tout le reste
+
+Je proposais de déposer un avis test portant un détail vérifiable, pour voir si la réponse du prestataire le reprend. **C'est une faute, et le motif avancé est le bon** : déposer un avis qui ne repose sur aucune expérience de consommation réelle est précisément ce que la réglementation sur les avis en ligne interdit, et c'est l'obligation même dont ce projet prétend faire sa différenciation. Fonder notre première mesure sur l'infraction que nous reprochons aux autres aurait détruit la seule chose que nous avons à vendre. Le bloc est réécrit en § C, par une voie propre.
+
+J'ajoute ceci, parce que l'erreur a une portée au-delà du test : **si j'ai pu proposer cela, un agent ultérieur le proposera aussi.** Le document gagnerait une interdiction explicite en section 9, aux côtés des autres : *« jamais une mesure obtenue en produisant un faux signal dans la donnée d'un tiers — ni faux avis, ni faux compte, ni faux clic »*. C'est la seule ligne de ce retour que je propose d'ajouter sans qu'on me l'ait demandée.
+
+## B. La question binaire — réponse, et passages littéraux
+
+**Hôtes bloqués, nommés avant tout** : `cnb.avocat.fr` est désormais `EGRESS_BLOCKED` en accès direct — j'ai donc échoué à reprendre l'extraction du vade-mecum du CNB là où elle s'était arrêtée. **Voie de contournement empruntée et réussie** : le **Code de déontologie annoté du Barreau de Paris, article 10 « Communication »**, qui republie le texte intégral de l'article 10 du RIN et l'assortit de la jurisprudence de la Cour de cassation et des avis déontologiques — `codedeonto.avocatparis.org/index.php?option=com_deonto&view=articles&layout=pdf&id=161`, **34 pages lues en entier** (77 611 caractères), consulté le 2 octobre 2026. Cran **B**. S'ajoutent aux hôtes bloqués déjà nommés : `www.insee.fr`, `support.google.com`, `developers.google.com`, `www.legifrance.gouv.fr`.
+
+### B.1 La réponse
+
+**OUI — un avocat peut solliciter, recueillir et laisser exister des avis de clients. Il ne peut pas les intégrer à sa propre communication sous forme de note ou de classement.** La frontière n'est pas l'avis : c'est **l'intégration**. Et elle ne passe pas par l'interdiction générale que les sources secondaires affirmaient : **je n'ai trouvé aucune interdiction générale des témoignages de clients pour l'avocat**, à l'inverse exact du médecin.
+
+### B.2 Le texte qui trace la frontière — Cour de cassation, 1re civ., 11 mai 2017, n° 16-13.669
+
+> « **Site internet tiers.** Une cour d'appel ne peut pas interdire à une société commerciale d'établir des comparaisons et notations d'avocats sur son site en se fondant sur l'art. 15 du Décr. n° 2005-790 du 12 juill. 2005, qui interdit à tout avocat **d'intégrer**, à l'occasion d'opérations de publicité ou de sollicitation personnalisée, tout élément comparatif ou dénigrant, **alors que cette disposition ne s'applique pas aux tiers, non tenus par les règles déontologiques de cette profession**, dont il appartient seulement, dans leurs activités propres, de délivrer au consommateur une information loyale, claire et transparente. »
+
+Confirmé deux ans plus tard sur un autre terrain — **Cass. 1re civ., 22 mai 2019, n° 17-31.320** : ces textes « ne régissent que la profession d'avocat et **ne peuvent être opposés à des tiers étrangers à cette profession** ».
+
+**Lecture.** La déontologie lie l'avocat, pas Google. Des avis et une note sur la fiche Google d'un cabinet sont licites, et l'Ordre n'a aucune prise sur la plateforme. Mais le verbe de l'arrêt est **« intégrer »** : dès que l'avocat reprend la note dans sa propre communication — widget sur son site, « 4,9/5 » sur sa plaquette, bandeau « le cabinet le mieux noté de Pointe-à-Pitre » — il intègre un **élément comparatif**, et l'article 10.2 du RIN le prohibe en toutes lettres : « **Sont prohibées : [...] Toute mention comparative ou dénigrante.** »
+
+### B.3 Ce qui est réellement sanctionné : le faux témoignage, pas le témoignage
+
+Avis déontologique du Barreau de Paris **n° 25.6014 du 21 juillet 2015**, cité par le code annoté :
+
+> « Manque aux principes essentiels de loyauté et de modération ainsi qu'aux dispositions de l'art. 10.1 (devenu 10.2) RIN, l'avocat qui indique exercer la profession d'avocat au sein d'une structure alors qu'il exerce à titre individuel, qui fait référence à une spécialisation inexistante et, enfin, **qui publie sur son site internet de nombreux commentaires particulièrement laudatifs censés émaner de différents clients mais dont plusieurs témoignages se répètent en des termes identiques**. »
+
+**Lecture, et je la veux prudente.** C'est la seule décision que j'aie trouvée sur des commentaires de clients publiés par un avocat. L'élément qui fonde le manquement est que les témoignages étaient **fabriqués** — « censés émaner de différents clients » et « se répètent en des termes identiques » —, aggravé par deux autres manquements sans rapport. **Ce n'est pas une interdiction de publier des avis authentiques.** C'est la sanction du faux avis, c'est-à-dire exactement la règle que le projet veut outiller.
+
+**Et c'est là que la différence entre les deux professions devient citable mot pour mot :**
+
+| | Texte | Portée |
+|---|---|---|
+| **Médecin** | R. 4127-19-1 CSP : la communication « **ne fait pas appel à des témoignages de tiers**, ne repose pas sur des comparaisons » | **Interdiction de principe**, dans le texte réglementaire lui-même |
+| **Avocat** | RIN 10.2 : « Sont prohibées : [...] **toute mention comparative ou dénigrante** » — et aucun texte prohibant les témoignages | **Interdiction du comparatif seulement.** Le témoignage authentique n'est pas prohibé ; le témoignage fabriqué est sanctionné |
+
+Le médecin ne peut pas faire appel à un témoignage de patient. L'avocat peut faire état d'un témoignage de client, à condition qu'il soit vrai et qu'il ne compare pas. **Un quart du produit est sauvé sur ce segment, et l'autre quart tombe.**
+
+### B.4 Les quatre conditions exactes, et deux d'entre elles tuent les outils génériques
+
+**Condition 1 — rien de comparatif, sur aucun support.** RIN 10.2, cité ci-dessus. Donc : pas de note affichée, pas de classement, pas de benchmark concurrentiel. Or le benchmark concurrentiel est la fonction mise en avant par TrustYou (« Competitor benchmarking » dès l'offre Lite à 75 €), Revinate (« Competitive benchmarking »), ReviewPro (« Global Review Index ») et Localo (« Stand out from competitors by seeing what they do »). **Ces produits sont inutilisables tels quels par un avocat.**
+
+**Condition 2 — aucun tiers pour contourner.** RIN 10.3, texte intégral :
+
+> « La sollicitation personnalisée prend la forme d'un message exclusif de toute démarche physique ou téléphonique. Sont exclus les messages textuels envoyés sur un terminal téléphonique mobile. **Il est interdit à l'avocat d'utiliser les services d'un tiers dans le but de contourner ces interdictions.** »
+
+**C'est la phrase qui engage directement le projet.** Un prestataire qui proposerait à un avocat la collecte d'avis par SMS — fonction phare de Partoo, Guest Suite et Digitaleo — ne lui vendrait pas un service : il lui vendrait un **contournement**, expressément interdit. Le projet, en tant que tiers, serait l'instrument du manquement de son client.
+
+**Condition 3 — tout passe par l'Ordre.** RIN 10.2 : « L'avocat qui communique sur ses spécialisations [...] **ou modifie substantiellement cette communication, quel que soit le support, doit transmettre les termes de cette communication sans délai au conseil de l'Ordre.** » Et RIN 10.3 : « **Toute publicité doit être communiquée sans délai au conseil de l'ordre.** » Au barreau de Paris s'ajoute un contrôle **a priori** pour les supports de masse (art. P.10.0.4) : les messages « devront être **préalablement** communiqués au conseil de l'ordre dans des délais lui permettant de faire utilement ses observations ».
+
+**Condition 4 — le site ne porte ni encart tiers, ni lien non surveillé.** RIN 10.5, texte intégral :
+
+> « Le site de l'avocat **ne peut comporter aucun encart ou bannière publicitaire**, autres que ceux de la profession, pour quelque produit ou service que ce soit. Il ne peut comporter de lien hypertexte permettant d'accéder directement ou indirectement à des sites ou à des pages de sites dont le contenu serait contraire aux principes essentiels de la profession d'avocat. **Il appartient à l'avocat de s'en assurer en visitant régulièrement les sites et les pages auxquelles permettent d'accéder les liens hypertextes que comporte son site, et de prendre sans délai toutes dispositions pour les supprimer** si ce site devait se révéler contraire aux principes essentiels de la profession. »
+
+Deux conséquences. D'abord, un **widget d'avis embarqué** est un encart tiers portant un lien sortant : il est au minimum à risque, et porteur d'une note, donc comparatif, donc prohibé par la condition 1. Ensuite, et c'est le troisième rendez-vous avec le même organe : l'avocat porte une **obligation de surveillance continue et prouvable de ses liens sortants**, avec retrait « sans délai ». C'est de la veille horodatée sur son propre site.
+
+**Et un avertissement sur le produit « publication sociale ».** Avis du Conseil de déontologie du Barreau de Paris **n° 121/22.5875 du 13 mars 2012** :
+
+> « **Renvoi vers des réseaux sociaux (non).** Le site d'un avocat ne peut [...] comporter de liens hypertextes permettant d'accéder directement ou indirectement à des sites dont le contenu serait contraire aux principes essentiels de la profession d'avocat, **comme des liens renvoyant vers les réseaux sociaux, ces derniers n'offrant pas les garanties nécessaires**. »
+
+**Je signale moi-même la faiblesse de cette pièce** : c'est un avis d'un conseil de déontologie, pas une décision de cassation, il date de 2012, donc **avant** la réforme de l'article 10 par la décision à caractère normatif n° 2019-005 du 30 avril 2020, et le RIN actuel dit par ailleurs que « l'avocat participant à un blog ou à un réseau social en ligne doit respecter les principes essentiels de la profession » — ce qui suppose qu'il peut y participer. L'avis est probablement dépassé. **Mais il est republié en 2026 dans le code annoté du plus grand barreau de France**, ce qui veut dire qu'un bâtonnier peut encore s'en saisir. Pour un produit de publication sociale destiné aux avocats, c'est un risque à lever auprès de l'Ordre, pas à ignorer.
+
+### B.5 Deux pièces qui valident le modèle d'affaires, et une qui contraint l'IA
+
+**Le recours à un prestataire tiers est licite**, sous une réserve précise, citée par le code annoté : « Ne manque pas aux principes essentiels de la profession l'avocat qui recourt aux services d'un site de mise en relation avec une clientèle potentielle **dès lors que la somme versée ne correspond pas à un partage d'honoraires** ». Donc un abonnement forfaitaire est licite ; une rémunération au dossier apporté ne l'est pas. **Le projet doit se facturer à l'abonnement, jamais à la performance.**
+
+**L'IA de réponse aux avis est bridée par la jurisprudence de la prudence.** Avis déontologique n° 22.3878 du 17 décembre 2002, confirmé par Paris, 28 mai 2003 : manque aux exigences de dignité et de délicatesse l'avocat qui tient « des propos excessivement laudatifs à son propre endroit (« Pour ma part, l'année X a été un très bon cru et **j'atteins presque 100 % de taux de succès** ») ou indirectement péjoratifs envers ses confrères ». Et : « Le simple fait pour un avocat d'annoncer [...] **qu'il ne peut que gagner les procès** engagés dans un certain domaine constitue en soi un manquement à la prudence. » **Un générateur de réponses qui écrirait « merci, nous obtenons toujours satisfaction » produirait une faute disciplinaire.** Les réponses aux avis d'un avocat ne peuvent donc pas être générées sans garde-fous métier — ce qu'aucun outil générique n'a.
+
+### B.6 Ce que je n'ai toujours pas, et la question à poser
+
+Je **n'ai pas lu** la Fiche n° 4 du vade-mecum du CNB (`cnb.avocat.fr` bloqué). Le code annoté du Barreau de Paris m'a donné le texte réglementaire intégral, la jurisprudence de cassation et les avis déontologiques — c'est davantage que ce que la fiche aurait apporté, mais ce n'est pas la même pièce, et le vade-mecum pourrait contenir un avis postérieur spécifiquement consacré aux avis en ligne. **Trois mots restent absents de tout ce que j'ai lu : « avis de client », « avis en ligne », « Google » — zéro occurrence dans 77 611 caractères du code annoté du Barreau de Paris, zéro dans les 70 121 caractères obtenus du vade-mecum.** Mon interprétation repose donc sur l'application de règles générales à un objet que les textes ne nomment pas.
+
+**La question exacte à poser à un avocat du barreau de Guadeloupe, Saint-Martin et Saint-Barthélemy** — formulée pour qu'une réponse de trois lignes suffise, et pour qu'elle porte sur ce que je ne peux pas trancher :
+
+> Maître,
+>
+> Je prépare un outil destiné aux cabinets d'avocats, qui centraliserait les avis Google reçus par le cabinet, aiderait à y répondre, et tiendrait un registre horodaté de tout ce qui est publié, aux fins de la transmission au conseil de l'Ordre prévue aux articles 10.2 et 10.3 du RIN. Quatre questions, sur lesquelles les textes que j'ai lus ne se prononcent pas explicitement :
+>
+> 1. **Solliciter.** Un cabinet peut-il inviter ses anciens clients à déposer un avis sur sa fiche Google — par un lien neutre en signature de courriel, un code QR à l'accueil, ou une mention sur la facture finale ? Une telle invitation constitue-t-elle une « sollicitation personnalisée » au sens de l'article 10.3, dès lors qu'elle ne porte aucune offre de service, ou une simple information ?
+> 2. **Afficher.** Je comprends de l'arrêt Civ. 1re, 11 mai 2017, n° 16-13.669 que la note établie par un tiers lui est licite, mais que l'avocat ne peut « intégrer » d'élément comparatif. Confirmez-vous qu'un widget affichant la note Google sur le site du cabinet est à écarter, et qu'en revanche la reprise du **texte** d'un avis authentique, sans note ni classement, serait admissible ? Ou l'avis déontologique n° 25.6014 du 21 juillet 2015 doit-il se lire comme écartant aussi les témoignages authentiques ?
+> 3. **Transmettre.** Quelle est la pratique du conseil de l'Ordre de Guadeloupe pour les publications numériques courantes : chaque publication sur la fiche Google ou un réseau social doit-elle être transmise au titre de l'article 10.3, ou la transmission ne vise-t-elle que la communication sur les spécialisations et les domaines dominants ? Sous quelle forme, et à quelle adresse ?
+> 4. **Le tiers.** L'article 10.3 interdit à l'avocat « d'utiliser les services d'un tiers dans le but de contourner ces interdictions ». Un prestataire qui rédigerait et publierait pour le cabinet, sous abonnement forfaitaire et sans partage d'honoraires, entre-t-il dans cette interdiction, ou reste-t-il un prestataire technique admissible ?
+
+Un courriel au bâtonnier ou au conseiller aux affaires déontologiques du barreau coûte zéro euro et répond à ce que je n'ai pas pu trancher. **C'est, avec le test à 80 €, la deuxième des deux seules mesures de première main qui manquent à toute l'opération** — et celle-ci est gratuite.
+
+## C. Protocole de test — le bloc « avis » réécrit par une voie propre
+
+Les trois autres blocs du § 5 (installation, publications, rapport et relation) restent tels quels. Celui-ci les remplace.
+
+**Sur les avis — observer les avis réels, sans en produire aucun**
+
+*Relevé d'état, qui ne touche à rien :*
+- Au jour 0, capturer le **nombre total d'avis** et la **note moyenne** de la fiche. Idem au jour 30. L'écart donne le **flux mensuel réel d'avis** — qui est le chiffre manquant de tout mon travail (D13), celui qui détermine la charge de la prestation et donc son coût de revient.
+- Relever, pour chaque avis **déjà présent avant l'abonnement**, s'il a reçu une réponse et laquelle. Cela donne la ligne de base du cabinet avant intervention.
+
+*Sur chaque avis réel qui arrive pendant le mois — chacun est une unité d'observation suffisante :*
+- **Délai** entre la publication de l'avis et la publication de la réponse, en heures. Une réponse en moins d'une heure, la nuit, un dimanche ou un jour férié, est une réponse automatique : c'est la mesure la plus discriminante, et elle ne demande que de regarder.
+- La réponse **reprend-elle un élément propre au texte de l'avis** — le prénom, le motif de satisfaction ou de reproche, un détail nommé par le client ? C'est observable sur un avis authentique aussi bien que sur un avis planté.
+- **Comparer les réponses entre elles** : mêmes formules d'ouverture et de clôture, même longueur, même structure, c'est un gabarit. Deux réponses suffisent à le voir, trois le prouvent.
+- Traitement différencié : un **avis négatif** reçoit-il une réponse plus lente, plus prudente, ou le même gabarit ? Un prestataire qui répond à un avis à une étoile avec le modèle du cinq étoiles ne relit pas.
+- **Si aucun avis n'arrive pendant le mois**, c'est le résultat le plus informatif de tout le test, et non un échec : il établit que la ligne « réponse à tous les avis » ne coûte rien au prestataire sur un établissement de ce profil, donc que les 80 € achètent en réalité huit publications et un rapport. Noter l'absence avec la même rigueur qu'une présence.
+
+*Lecture rétrospective, gratuite et immédiate :*
+- Lire les réponses aux avis **antérieurs** à l'abonnement et les comparer à celles qui suivent. Une rupture nette de style, de longueur ou de délai **date l'arrivée de l'automatisation** et identifie souvent l'outil. Cette observation se fait au jour 1, sans attendre le mois.
+
+*Les questions à poser au prestataire — ce sont des questions légitimes d'acheteur, et la façon dont il y répond est une donnée :*
+- « Me soumettez-vous les réponses avant publication, ou publiez-vous directement ? »
+- « Qui rédige : vous, un collaborateur, ou un outil ? Lequel ? »
+- « Quel délai de réponse vous engagez-vous à tenir, et que se passe-t-il le week-end ? »
+- « Comment traitez-vous un avis négatif ? Et un avis diffamatoire ou manifestement faux — demandez-vous le retrait à Google, et sur quel fondement ? »
+- « Pouvez-vous me montrer deux ou trois réponses que vous avez rédigées pour d'autres clients ? »
+- « Que faites-vous si le client n'est pas d'accord avec une réponse déjà publiée ? »
+
+Une réponse franche — « oui, je m'aide d'un outil, voici lequel » — vaut toutes les déductions. Un refus de répondre est lui aussi une information, et il est gratuit.
+
+## D. État de preuve de cet addendum
+
+**Lignes en B : 9** — toutes tirées du Code de déontologie annoté du Barreau de Paris, article 10, lu intégralement (34 pages), qui cite le texte du RIN, trois arrêts de la Cour de cassation (11 mai 2017 n° 16-13.669 ; 22 mai 2019 n° 17-31.320 ; les décisions de 1992, 1993, 2009 et 2012 sur la publicité) et quatre avis déontologiques datés (n° 25.6014 du 21 juillet 2015 ; n° 22.3878 du 17 décembre 2002 ; n° 121/22.5875 du 13 mars 2012 ; n° 15-9867 du 27 mai 2008).
+**Lignes en C : 0.**
+**Lignes en D : 1** — ma qualification du widget d'avis Google comme « encart » au sens de l'article 10.5 est une **interprétation mienne**, non une décision citée. Les textes ne nomment nulle part les avis en ligne.
+**A-mesure et A-usage : toujours zéro**, et les deux seules mesures de première main qui manquent sont nommées : le test à 80 €, et le courriel au bâtonnier de Guadeloupe, qui est gratuit.
+
+*Fin de l'addendum. Aucun commit. `00-PROMPT-DE-LANCEMENT.md`, `critiques/02-marche.md` et `critiques/02-marche-relance.md` non modifiés.*

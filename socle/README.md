@@ -336,14 +336,21 @@ publication 1 programmee  local 2026-10-02 10:00 (UTC-4)  =  UTC 2026-10-02T14:0
 
 ## 8. Inventaire des fichiers
 
+Comptes relevés par `grep -cve '^\s*$'` le 2 octobre 2026 :
+
 | Fichier | Lignes non vides | Rôle |
 |---|---|---|
-| `schema.sql` | — | 24 objets : 12 tables, 2 vues, déclencheurs et contraintes |
-| `socle.py` | 258 | collecte, extraction, provenance, index, assertions, rapport, étalons |
-| `verifier.py` | 101 | rejeu d'une ligne, trois contrôles indépendants |
+| `schema.sql` | 375 | 24 objets : 12 tables déclarées (+ la table FTS5 et ses tables d'ombre), 2 vues, 4 déclencheurs |
+| `socle.py` | 326 | collecte, extraction, provenance, index, assertions, rapport, étalons |
+| `verifier.py` | 122 | rejeu d'une ligne, trois contrôles indépendants |
 | `publier.py` | 215 | orchestrateur de publication, trois plateformes |
-| `banc/generer.py` | 104 | portail fictif multilingue, 4 langues dont gcf |
+| `banc/generer.py` | 128 | portail fictif multilingue, 4 langues dont gcf |
 | `banc/bouchon_plateformes.py` | 17 | bouchon des interfaces de plateformes |
 | `sources.json` | — | registre de qualification, une fiche par source |
+
+**Total du code et du schéma livrés : 1 183 lignes non vides**, commentaires et
+documentation inclus — dont 375 de schéma SQL commenté, 215 pour la publication et 145
+pour le banc de démonstration. La chaîne de collecte proprement dite — découverte,
+extraction, provenance, index, rapport — tient dans les 326 lignes de `socle.py`.
 
 Dépendances externes : `trafilatura` (Apache-2.0), `py3langid` (BSD). Rien d'autre.

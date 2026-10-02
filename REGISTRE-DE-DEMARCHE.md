@@ -49,6 +49,9 @@ Toutes sont de moi, sauf mention. C'est le registre le plus utile du document.
 | « Le mandat ne commande que le volet avis » | Doctrine, `B·2` | Publier sur les comptes d'un client exige la même délégation. Il commande **la moitié du produit, et la moitié qui agit** |
 | « La Guadeloupe est un avantage produit » | Marché **et** Marché-libéral, `B·2` | Les six exigences ne couvrent que 3,5 à 5,2 % du marché adressable. Nulle ne s'applique à un cabinet d'avocat |
 | Protocole de test : « déposer un avis portant un détail vérifiable » (proposé par l'agent marché) | Moi, `B·1` | Déposer un avis non fondé sur une expérience réelle enfreint l'obligation même que le projet veut tenir |
+| « Le prix plafond local est 80 €/mois » — relayé par moi à Laurent comme un fait | Droit, 3e tour, `B·2` | **Cette offre n'existe pas.** Pages de vente lues : le prestataire de Saint-Claude est à **200 €/mois, avis non inclus**. La moins chère qui réponde à tous les avis est à **450 € HT**. Le parapluie tarifaire est 2,5 à 5 fois plus haut |
+| « L'angle du produit est la conformité » — avancé par moi | Droit, 3e tour, `B·2` | Un éditeur vend déjà la conformité, **certifiée par un organisme de normalisation**, et capte la date d'expérience par interface. L'angle est ailleurs : l'affichage loyal de l'avis agrégé, ou son refus assumé |
+| « Les obligations de transparence du règlement européen sur l'IA couvrent les réponses aux avis » — relayé par moi | Droit, auto-correction, `B·2` | Probablement non. La responsabilité éditoriale tient sur la loi sur la confiance dans l'économie numérique et la loi de 1881 — fondement plus solide |
 
 ---
 
@@ -60,7 +63,6 @@ Toutes sont de moi, sauf mention. C'est le registre le plus utile du document.
 | 760 établissements employeurs en hébergement-restauration, 86 % à 1-9 salariés | `B·2` | Organisme de branche d'après sources publiques |
 | 55 hôtels, 3 252 chambres, 59 chambres de moyenne, 24 non classés | `B·2` | Institut national de la statistique, 1/1/2023 |
 | 80 € achètent 1 h 23 de community manager expérimenté, 6 h 30 au salaire minimum brut | `B·2` | Baromètre de tarifs, salaire minimum applicable en Guadeloupe |
-| Un prestataire local vend 8 publications, la réponse aux avis, photos et rapport à 80 €/mois | `B·3` | Une **seule** liste de prix d'un seul opérateur. Fragile — le test à 80 € existe pour cela |
 | Les intégrations Booking sont suspendues pour les nouveaux fournisseurs de connectivité, et réservées aux gestionnaires de canaux | `B·2` | Documentation Booking |
 | La délégation d'administrateur Google est programmable par interface de programmation | `B·2` | Deux sources Google indépendantes, dont la référence technique |
 | Médecins : la communication « ne fait pas appel à des témoignages de tiers, ne repose pas sur des comparaisons » | `B·2` | Code de déontologie médicale |
@@ -72,6 +74,13 @@ Toutes sont de moi, sauf mention. C'est le registre le plus utile du document.
 | Reconstruire six briques équivalentes : 142,7 années-auteur, soit 71 ans à deux | `A·1` | Dépouillement de six dépôts |
 | Les six exigences guadeloupéennes ne couvrent que 3,5 à 5,2 % du marché adressable | `B·2` | Croisement de deux périmètres statistiques |
 | Dépouiller les accents fait tomber la reconnaissance du créole guadeloupéen | `A·3` | Mesure en session, échantillon étroit |
+| **Bande vide entre 30 € et 200 €/mois** : plus aucune prestation humaine, seulement des outils en libre-service | `B·2` | Pages de vente de cinq prestataires, dont trois locaux |
+| La conformité **est** le geste humain, et les outils vendent de l'avoir supprimé : réintroduire la validation humaine coûte le double chez deux éditeurs de publication | `B·2` | Grilles tarifaires comparées |
+| Licence de veille presse : **52,50 € HT par client et par mois**, 630 € HT par an, plein tarif en Guadeloupe. Un seul contrat couvre droit d'auteur et droit voisin | `B·3` pour le montant, `B·2` pour le ratio | Contrat réel de l'organisme de gestion collective |
+| Republier un article de presse sur un réseau social : **50 à 150 € HT par article, compté double** entre site et réseau | `B·2` | Grille de licence web |
+| **Plancher de coût : 25 à 35 € HT sans la presse, 100 à 120 € HT avec** | `B·3` | Calcul sur entrées sourcées, volume d'avis en cran D |
+| **Aucune plateforme n'offre un accès délégué complet.** Google seul est en jeton délégué, et son point d'accès aux avis serait inatteignable. Booking et Expedia lisent et répondent, mais par compte machine. TripAdvisor n'a aucun point de réponse et plafonne à 5 avis | `B·2`, sauf l'inaccessibilité Google en `C·3` | Documentations et témoignages de forum |
+| **L'administration ne peut pas opposer son droit de producteur sur ses données ouvertes** — c'est un droit, non une tolérance | `B·2` | Code des relations entre le public et l'administration |
 
 **La convergence la plus précieuse de la session.** La licence des décisions de justice impose de mentionner source et date de mise à jour. Le règlement intérieur des avocats impose de transmettre à l'Ordre toute publicité. L'organe de provenance du projet exige la source primaire, la date et la rejouabilité. **Les trois demandent la même pièce** : journal de provenance en entrée, registre transmissible en sortie, un seul organe. Aucun concurrent ne l'a.
 
@@ -115,7 +124,8 @@ Institut national de la statistique · support et documentation développeurs Go
 
 — **Zéro `A` sur tout le volet marché et tout le volet juridique.** Les deux agents le déclarent eux-mêmes. Rien là ne fonde une décision de construire, seulement l'abandon de ce qui est faux
 — Meta inatteignable, et c'est un échec, non un choix
-— Prix plafond du segment libéral non sourcé : les éditeurs ne publient pas leurs tarifs
+— Prix plafond du segment libéral non sourcé : les éditeurs métier ne publient pas leurs tarifs
+— Le point d'accès aux avis Google est-il praticable ? Trois témoignages de forum disent non, aucune source primaire. **Décide à lui seul de la praticabilité du volet avis**
 — Nombre d'avis mensuels par établissement : inconnu, et il déplace tout le calcul
 
 ### Limite de méthode établie
@@ -128,5 +138,6 @@ Institut national de la statistique · support et documentation développeurs Go
 
 | Objet | Ce qu'il faut | Ce que ça débloque |
 |---|---|---|
-| Test à 80 € chez le prestataire local | Une dépense, et le protocole corrigé | Le **premier `A`** du projet. Plafond réel, degré d'automatisation du concurrent, son guichet, et le jeu d'épreuve guadeloupéen que rien d'autre ne peut fournir |
+| Test chez le prestataire local, **200 € et non 80 €** | Une dépense, et le protocole corrigé | Le **premier `A`** du projet. Degré réel d'automatisation du concurrent, son guichet, et le jeu d'épreuve guadeloupéen que rien d'autre ne peut fournir |
+| **Test à 0 € sur l'accès aux avis Google** | Un compte et une heure | La conclusion la plus coûteuse si elle est fausse. Si ce point d'accès est réellement inatteignable, le volet avis n'a **aucune** plateforme praticable |
 | Élargissement de l'accès réseau | Un réglage | Toute mesure guadeloupéenne réelle, et la vérification des sources primaires de droit |
