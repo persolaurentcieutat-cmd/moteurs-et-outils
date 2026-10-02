@@ -1,0 +1,6 @@
+# Fichiers temporaires de SQLite — créés à chaque ouverture de la base du
+# socle, sans valeur et changeants. La base elle-même est versionnée : elle
+# porte les douze captures du banc et les vingt et une assertions prouvées.
+*.db-shm
+*.db-wal
+*.db-journal
