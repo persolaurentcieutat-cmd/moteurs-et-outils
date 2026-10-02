@@ -221,8 +221,12 @@ def cmd_assertions(a):
     Pas d'IA ici : genere_par_ia reste à 0 et la chaîne est factuelle."""
     c = cx()
     n = 0
+    # Seules les captures en 200 nourrissent des assertions. Une page d'erreur
+    # est un fait de provenance valide, ce n'est pas une source d'affirmation.
     for eid, txt in c.execute("""SELECT e.id, e.texte FROM extraction e
-                                 WHERE e.texte <> '' AND e.id NOT IN
+                                 JOIN capture c ON c.id = e.capture_id
+                                 WHERE e.texte <> '' AND c.http_statut = 200
+                                   AND e.id NOT IN
                                  (SELECT DISTINCT extraction_id FROM assertion)""").fetchall():
         pos = 0
         for ph in re.split(r"(?<=[.!?])\s+", txt):
