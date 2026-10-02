@@ -700,3 +700,493 @@ qualifiée de *legacy*, dont les fonctions ont été réparties dans trois API m
 aucun endpoint d'avis**. Soit Google les y portera — et il faudra réécrire —, soit il ne les portera
 pas, et c'est un signal sur l'avenir de l'accès programmatique aux avis Google. Dans les deux cas,
 aucune architecture ne doit supposer la stabilité de `mybusiness.googleapis.com/v4`.
+
+---
+---
+
+# VERSION 2 — § 8 à 11
+
+---
+
+## 8. TRAVAIL PRIORITAIRE — Le test de non-conformité sur les produits réellement en place
+
+### 8.1 Correction de la prémisse : l'agence à 80 €/mois n'existe pas sur ce marché
+
+Le coordinateur demande de tester « la prestation d'une agence locale à quatre-vingts euros par mois
+qui promet huit publications et la réponse à tous les avis ». **J'ai cherché cette offre et elle
+n'existe pas en Guadeloupe.** Voici ce que j'ai trouvé à la place, lu sur les pages publiques des
+prestataires eux-mêmes, toutes consultées le 2 octobre 2026. **Cran B** pour chaque prix et chaque
+contenu d'offre — ce sont leurs propres pages de vente.
+
+| Prestataire | Implantation | Prix public | Ce qui est promis | Réponse aux avis incluse ? |
+|---|---|---|---|---|
+| **MangoWeb Digital** (`mangoweb.digital/communication-digitale`) | Saint-Claude, **Guadeloupe (97120)** | **200 €/mois** (Essentiel) ; 400 € ; 700 € | Verbatim à 200 € : « **8 publications par mois** · Stories hebdomadaires · 1 réseau social · Visuels inclus · Rapport mensuel ». À 400 € s'ajoute « Gestion des commentaires ». | **Non à 200 €.** La page annonce par ailleurs un service « E-réputation — Gestion de vos avis Google et réseaux », mais il n'est pas dans la formule à 200 €. |
+| **Linkeo Guadeloupe** (`linkeo-guadeloupe.com/community-management.php`) | Réseau national, antenne Guadeloupe | **À partir de 250 € HT/mois + 300 € HT de frais de création** | « Publication hebdomadaire sur vos réseaux · Newsletter mensuelle · **Modération des avis négatifs** · Rapports de suivi mensuels » | **Partiellement, et mal** — voir § 8.5 b). |
+| **So-Community** (`so-community.fr/region/guadeloupe`) | National, page régionale | **Dès 490 €/mois** | Community management complet | Non précisé |
+| **Katchak Agency** (`katchak-agency.fr/community-management-en-guadeloupe/`) | Guadeloupe, depuis 2018 | **À partir de 1 290 € HT/mois** | « Commentaires, avis et messages privés reçoivent une réponse rapide » | Oui |
+| **CWS — Caraïbes Web Solutions** (`cws.gp/services/reseaux-sociaux.html`) | Guadeloupe | **Sur devis** | « 3 publications/semaine · Réponses commentaires » | « Réponse proactive aux questions et avis » |
+| **Plateya** (`app.plateya.fr/...forfait-seo-local-fiche-gmb`) | National | **450 € HT/mois** avec engagement 6 mois, **690 € HT/mois** sans | « Une publication par semaine · **Réponse à chaque avis et à chaque question** · Contrôle des modifications suggérées par Google ou par des tiers » | **Oui, explicitement** |
+
+**Ce que la correction change, et c'est une bonne nouvelle pour Laurent.**
+
+L'offre « 8 publications par mois » existe bien, et elle est guadeloupéenne : c'est MangoWeb à
+**200 €/mois**, pas 80 €. L'offre « réponse à chaque avis » existe aussi, et la moins chère que j'aie
+trouvée est à **450 € HT/mois**. Le parapluie tarifaire est donc **deux fois et demie à cinq fois plus
+haut** que la prémisse ne le supposait.
+
+Et le marché a une **bande vide**. En dessous de 200 €, il n'y a plus de prestation humaine : il n'y a
+que des outils en libre-service, et on y descend très vite jusqu'à zéro — widget d'avis gratuit,
+Buffer gratuit sur trois canaux, Metricool gratuit sur une marque. Entre **environ 30 € et 200 €, il
+n'y a rien**. Pas un prestataire, pas un outil positionné. C'est la place du produit de Laurent, et le
+reste de ce § 8 explique pourquoi elle est vide : **parce que personne n'a automatisé le chemin
+conforme.**
+
+### 8.2 Produit 1 — l'outil gratuit de fiche d'établissement
+
+Deux objets distincts, et la confusion entre eux est elle-même instructive.
+
+**(a) Google Business Profile lui-même — gratuit.** C'est la plateforme, pas un prestataire. Elle
+affiche la date des avis, elle offre un mécanisme de signalement, elle publie positif et négatif.
+**Côté Google, les obligations de L111-7-2 sont tenues.** Ce qui compte pour nous, c'est que GBP est
+**l'étalon gratuit** du § 5 du document cible : un hôtelier peut lire et répondre à tous ses avis
+Google, à la main, pour zéro euro. Tout produit payant doit battre cela, et la seule chose que GBP ne
+fait pas est l'agrégation multi-plateforme et le gain de temps.
+
+**(b) Meditrust — gratuit à 129 €/mois** (`meditrust.io/produit-afficher-avis/`, consulté le
+2 octobre 2026, **cran B**). Déjà testé au § 3.2. Un constat que je n'avais pas tiré et qui est le plus
+intéressant du lot :
+
+| Palier | Prix | Comportement d'affichage | Conforme à D111-17 1° c) ? |
+|---|---|---|---|
+| Gratuit | 0 € (200 affichages/mois) | « La version gratuite vous permet d'afficher **les 4 avis les plus récents** de votre fiche Google » | **Oui sur le classement** — « les plus récents » est le classement chronologique exigé |
+| Widget seul | 5,95 €/mois | « Affichages illimités » | Le tri par note 4★+ devient le défaut |
+| Packs 34 / 69 € | | « **affichage d'avis spécifiques** », « Module de réponse aux avis » | Non |
+| Pack avancé | 129 €/mois | « **Affichage intelligent (selon le contenu de la page)** » | Non |
+
+**La non-conformité est une fonctionnalité payante.** Le palier gratuit affiche les quatre avis les
+plus récents, ce qui est exactement le classement chronologique que le décret exige. Ce qu'on achète
+en montant dans la grille, c'est **le droit de choisir quels avis le consommateur verra** : tri par
+note, puis sélection d'avis spécifiques, puis sélection sémantique par page. Verbatim, c'est vendu
+comme « 🧠 Affichage intelligent : **les bons avis, au bon endroit** ».
+
+Aucune mention, à aucun palier, de la date de l'expérience de consommation, de la procédure de
+contrôle, du délai de conservation, ni des critères de classement affichés à l'écran. **S1, S4, S7,
+M1, M2, M3 et P4 : non tenus.**
+
+### 8.3 Produit 2 — l'outil de publication à quelques euros par canal
+
+**Buffer** (`buffer.com/pricing.md` et `support.buffer.com/articles/buffer-pricing-and-features-6pJrOPuzIt`,
+consultés le 2 octobre 2026, **cran B** — pages de l'éditeur) :
+
+| Plan | Prix | Ce qui compte ici |
+|---|---|---|
+| Free | 0 € | 3 canaux, 10 publications en file par canal, 1 utilisateur, **AI Assistant inclus** |
+| Essentials | **6 $/canal/mois** (5 $ en annuel) | Publications illimitées, 1 utilisateur, **aucun circuit de validation** |
+| Team | **12 $/canal/mois** (10 $ en annuel) | « Everything in Essentials · unlimited team members · **approval workflows** » |
+
+**Metricool** (`metricool.com/pricing/`, et grille détaillée corroborée par deux comparatifs lus le
+2 octobre 2026 — **cran B** pour la page éditeur, **C** pour la grille détaillée) :
+
+| Plan | Prix | Ce qui compte ici |
+|---|---|---|
+| Free | 0 € | 1 marque, 20 publications/mois, 5 crédits IA/mois |
+| Starter | **20 €/mois** mensuel (16 € en annuel), jusqu'à 5 marques | 20 crédits IA, **« no approval flow »** |
+| Advanced | **54 €/mois** mensuel (43 € en annuel), jusqu'à 15 marques | **« approval system »**, 35 crédits IA, API |
+| Complément X | **10 €/mois par compte connecté** | — |
+
+**Le test, obligation par obligation.**
+
+| Obligation | Buffer | Metricool | Verdict |
+|---|---|---|---|
+| **P1 — validation humaine nominative avant mise en ligne** | Absente d'Essentials. Présente sur **Team, qui coûte exactement le double** : 12 $ contre 6 $ par canal. | Absente de Starter. Présente sur **Advanced, à 54 € contre 20 €**, soit **+170 %**. | **Non tenue aux paliers bas. Et le prix de la conformité est chiffré : ×2 chez Buffer, ×2,7 chez Metricool.** |
+| **M5 / M6 — transparence et marquage des contenus générés** | Assistant IA sur **tous** les plans, y compris gratuit. Aucune mention de marquage sur les pages lues. | Crédits IA sur tous les plans. Aucune mention de marquage. | **Soupçon fondé, cran D15.** Testable pour 6 $ — § 10.6. |
+| **T5 — journal éditorial, responsable nommé** | Une file de publication n'a pas de notion de relecteur. Aucune trace de ce type annoncée. | Idem. | **Non tenue.** |
+| **PUB7 — blocage des extraits de presse sans licence** | Buffer annonce savoir « turn an existing link or article into a post ». | — | **Non tenue, et c'est le plus coûteux** — § 10.1. |
+| S1, S4 — métadonnées d'avis | Hors périmètre, ce ne sont pas des outils d'avis. | Idem. | Sans objet |
+
+**Conclusion sur ce segment, et elle est nette.** Le geste humain obligatoire — ma spécification P1 —
+**existe sur le marché, est parfaitement identifié par les éditeurs, et est vendu comme la
+fonctionnalité la plus chère du produit.** Chez Buffer il s'appelle *approval workflows* et il double
+la facture. Chez Metricool il s'appelle *approval system* et il la multiplie par 2,7. Un hôtelier
+guadeloupéen qui veut publier automatiquement **en restant conforme** paie donc, sur ces outils, le
+double du prix affiché — et il ne le sait pas, parce que personne ne lui dit que la validation
+humaine est une obligation et pas une commodité d'équipe.
+
+### 8.4 Produit 3 — l'outil de gestion d'avis à quelques dizaines d'euros
+
+Récapitulé depuis le § 3.2, dont le détail et les citations verbatim restent valables.
+
+| Obligation | Meditrust (0 à 129 €) | Partoo (prix **D11**) | Guest Suite (prix **D11**) |
+|---|---|---|---|
+| **S1 — date de l'expérience de consommation** | Non constatée | Non constatée | **Tenue** sur ses avis collectés en première main : l'API Experience transmet « contact, contexte, **date d'expérience** » |
+| **S4 / L121-4 27° — avis vérifié** | Non constatée | Non constatée | **Tenue** : « **Certifié NF Service Avis en ligne (AFNOR)** » |
+| **S8 / L121-4 28° — avis non modifiable** | Non constatée | Non constatée ; et « **Conservez sur la plateforme Partoo, les avis supprimés par les internautes** » pose un problème distinct de conservation | Non constatée |
+| **P1 — porte humaine avant publication** | Non applicable au widget ; « Module de réponse aux avis » dans les packs, fonctionnement non décrit | **Non tenue** : « L'agent ne se contente pas de suggérer une réponse : **il la publie** » | **Tenue dans un mode sur deux** : « Auto-Reply modéré […] **validées par nos équipes sous 48h avant publication** » ; non tenue dans l'autre : « **Zéro action de votre part** » |
+| **P4 — pas de sélection par la note** | **Non tenue** : « Tri par note (4★ et + par défaut) » | Non constatée | **Non tenue** sur le widget : « Un carrousel des derniers **verbatims 5★** » |
+| **S10 — pas d'affichage public des avis Booking** | Sans objet (Google seulement) | Sans objet (Google, Facebook, TripAdvisor) | **Risque direct** : Booking annoncé parmi les plateformes **et** widgets d'affichage sur le site du client. Non vérifié. |
+| **M1-M3 — mentions** | Non constatées | Non constatées | Non constatées sur les widgets |
+
+### 8.5 Produit 4 — la prestation d'agence locale
+
+**(a) MangoWeb Digital, 200 €/mois, Guadeloupe — et le résultat va surprendre.**
+
+Verbatim : « 8 publications par mois · Stories hebdomadaires · 1 réseau social · Visuels inclus ·
+Rapport mensuel », et « Toutes les formules incluent la création de contenu ».
+
+**Je n'ai trouvé aucune non-conformité sur la face de cette offre.** Et la raison est structurelle :
+un community manager humain qui rédige huit publications par mois **tient P1 nativement**. Il n'y a
+pas de publication non relue, parce qu'il n'y a pas de publication non écrite par un humain. T5 est
+imparfait — rien n'indique qu'un journal éditorial soit tenu — mais la substance de l'obligation est
+satisfaite. Et M5/M6 ne se posent pas si aucun contenu n'est généré ; si l'agence utilise un modèle,
+elle redevient déployeur, mais sa relecture l'exonère là où l'art. 50(4) s'applique.
+
+**(b) Linkeo Guadeloupe, à partir de 250 € HT/mois — et ici il y a une non-conformité, sur une offre
+vendue en Guadeloupe.** Verbatim, deux phrases de leur page :
+
+> « Chez Linkeo nous mettons en place des actions pour vous aider à **collecter les avis positifs de
+> vos clients satisfaits**. »
+
+> « **Modération des avis négatifs** » *(ligne de la formule à partir de 250 € HT/mois)*
+
+La première phrase décrit une **sollicitation sélective** : on invite à déposer un avis les clients
+dont on sait déjà qu'ils sont satisfaits. C'est exactement la pratique que Guest Suite déclare
+**refuser** — « **Aucune review-gating** : conforme aux règles Google et à la norme NF AFNOR […]
+aucune sélection interdite : **tout client peut être invité à publier** » — et c'est le candidat le
+plus direct à l'art. **L121-2** (présentation de nature à induire en erreur sur une caractéristique
+essentielle) et, selon la façon dont la note agrégée est ensuite présentée, à l'**art. L121-4 28°**.
+Je ne qualifie pas l'infraction — **cran D pour la qualification**, **cran B pour la citation**. Mais
+le simple fait qu'un concurrent du même marché déclare publiquement ne pas le faire, et l'autre le
+vende, est la preuve que l'écart de conformité est réel et visible.
+
+La seconde phrase, « modération des avis négatifs », décrit un pouvoir que le prestataire n'a pas : un
+avis Google ne se modère pas depuis l'extérieur, il se signale. Leur propre texte le reconnaît plus
+bas — « nous vous **accompagnons** dans la réponse à ces avis (ton à adopter, contenu) ». **L'offre
+promet plus que ce que le droit et la plateforme permettent de tenir.**
+
+**(c) Plateya, 450 € HT/mois — le plus conforme de tous ceux que j'ai lus.** Verbatim : « Réponse à
+chaque avis et à chaque question, en reprenant la prestation et la commune » et « **Le tout consigné,
+pour que vous sachiez ce qui a été fait.** » Cette dernière phrase est, en substance, mon journal
+éditorial T5, vendu comme argument commercial. Et le périmètre inclut le « Contrôle des modifications
+suggérées par Google ou par des tiers », qui est une diligence réelle.
+
+### 8.6 LE RÉSULTAT DU TEST — l'hypothèse se vérifie, mais pas pour la raison supposée
+
+**Elle se vérifie.** Sur les quatre segments, aucun outil en libre-service ne tient l'ensemble des
+obligations, et trois non-conformités sont **constatables depuis l'extérieur, sans rien acheter** :
+
+1. **Le tri par la note à l'affichage.** Meditrust le met par défaut à 4★+ dès le premier palier
+   payant ; Guest Suite vend un carrousel 5★. Contre D111-17 1° c), qui exige d'annoncer les critères
+   de classement et d'y faire figurer le classement chronologique.
+2. **La sollicitation sélective.** Linkeo la vend en Guadeloupe ; Guest Suite déclare la refuser. Le
+   désaccord entre deux concurrents sur la même page de vente est la meilleure preuve que c'en est
+   une.
+3. **L'absence de porte humaine et de toute divulgation du caractère généré** sur les contenus
+   publiés automatiquement. Partoo publie par agent sans validation ; Guest Suite publie « zéro action
+   de votre part » dans un de ses deux modes ; Buffer et Metricool réservent la validation au palier
+   supérieur.
+
+**Mais le mécanisme n'est pas la négligence.** C'est un arbitrage économique, et c'est le résultat le
+plus utile de tout ce travail :
+
+> **Le geste humain obligatoire est exactement ce que ces outils vendent d'avoir supprimé.**
+> La conformité, réduite à sa substance, c'est une porte humaine plus des métadonnées captées à
+> l'origine. Or la proposition de valeur entière d'un outil à 6 € par canal est la suppression de
+> l'humain, et son éditeur le sait si bien qu'il **facture le double** pour le réintroduire. Donc ces
+> outils ne peuvent pas devenir conformes sans devenir l'agence, et l'agence à 200-700 € ne peut pas
+> devenir rentable sans devenir l'outil. **La bande vide entre 30 € et 200 € est vide parce que
+> personne n'a automatisé le chemin conforme : tout sauf la porte, et la porte rendue assez peu
+> coûteuse pour tenir dans le prix.**
+
+**Elle se falsifie sur un point, et il faut le dire aussi nettement.** Guest Suite capte la date
+d'expérience, est certifié NF Service Avis en ligne, et offre un mode à relecture humaine. Sur les
+avis collectés en première main, **la conformité est déjà au catalogue d'un concurrent français**, avec
+un certificat que nous n'avons pas. L'angle n'est donc **pas** « la conformité » en général. Il est
+exactement là où même Guest Suite ne peut pas aller :
+
+> **L'affichage loyal de l'avis agrégé — ou son refus assumé et expliqué.** Parce que la date
+> d'expérience n'existe pas dans l'API de Google (§ 2.2), parce que Booking interdit l'affichage
+> public des siens (§ 1.4 a), et parce que les conditions de TripAdvisor sont incompatibles avec un
+> affichage loyal en France (§ 1.4 b). Personne ne peut afficher loyalement un avis agrégé. Nous
+> pouvons être les seuls à le **dire**, et à afficher ce qu'on sait avec la mention de ce qu'on ne
+> sait pas.
+
+C'est une position de vente concrète, opposable, vérifiable chez le concurrent en trente secondes, et
+qu'aucun acteur mondial ne prendra — parce qu'elle consiste à retirer la flatterie qui fait vendre les
+widgets, pour un marché de la taille de la Guadeloupe.
+
+---
+
+## 9. Spécifications étendues aux quatre outils
+
+Le § 2 couvrait les avis. Voici les trois autres. Même convention : une ligne par obligation, son
+fondement, et le champ ou le geste qui l'implémente.
+
+### 9.1 Publication automatique sur réseaux sociaux
+
+| # | Spécification technique | Fondement | Cran |
+|---|---|---|---|
+| **PUB1** | Champs `validateur_id` et `horodatage_validation` **non nuls**, contrainte en base. L'appel de publication échoue si l'un est nul. Validation par lot possible, mais nominative et horodatée par élément. | Qualification d'éditeur : LCEN art. 6-III-1 et loi du 29 juillet 1881, sans abri d'hébergeur sur un contenu que l'on produit | **C** |
+| **PUB2** | Champs `genere_par_ia` (booléen) et `mention_affichee` (texte). Si `genere_par_ia` est vrai **et** que la publication informe le public sur une question d'intérêt public, la mention est obligatoire et vérifiée avant envoi. Sinon elle est recommandée. | Règlement IA art. 50(4) al. 2 — **et voir D10 : une publication commerciale n'est probablement pas « d'intérêt public »**, donc la contrainte dure ne vise que le registre informationnel | **B-miroir** + **D10** |
+| **PUB3** | Champs `fournisseur_modele`, `engagement_marquage_ref`, `date_engagement`. Aucun modèle génératif n'entre en production sans engagement écrit de marquage lisible par machine archivé. | Règlement IA art. 50(2), obligation du fournisseur ; l'engagement écrit vaut diligence du déployeur | **B-miroir** |
+| **PUB4** | Champ `nature_commerciale_identifiable` (booléen), contrôlé pour toute publication promotionnelle. | LCEN art. 20 : la publicité accessible par un service de communication au public en ligne doit pouvoir être clairement identifiée comme telle. **Article non lu de première main** | **D** |
+| **PUB5** | Champ `autorisation_image_ref` obligatoire dès qu'un visuel contient une personne identifiable — client, personnel. Blocage de la programmation si nul. | Droit à l'image, art. 9 du Code civil. **Article non lu dans cette session** | **D** |
+| **PUB6** | Champs `source_visuel` et `licence_visuel` (vocabulaire contraint). Publication impossible si `licence_visuel` est nul. Une photo de banque d'images sans licence tracée ne sort pas. | Droit d'auteur, CPI | **B appliqué** |
+| **PUB7** | Champ `contient_extrait_presse` (booléen). Si vrai, **blocage dur** sauf présence de `licence_web_client_ref`. Et le compteur d'articles doit compter **deux** articles quand le même paraît sur un site et sur un réseau social. | CFC, *Notice Licence Web* : la licence autorise la mise en ligne de copies d'articles « sur ses sites internet, ses plateformes et ses comptes/profils publics de réseaux sociaux » ; **« Un même article publié sur un site internet et sur une page de réseau social compte pour deux articles. »** Tarif : **50 / 100 / 150 € HT par article** | **B** |
+| **PUB8** | Horodatages stockés avec fuseau explicite, UTC-4 sans heure d'été pour la Guadeloupe. Aucune programmation en heure locale implicite. | Exigence « Fuseau » du § 3 du document cible | **A-usage** (lecture du document) |
+
+### 9.2 Blog et façade
+
+| # | Spécification technique | Fondement | Cran |
+|---|---|---|---|
+| **BLOG1** | Page de mentions légales générée et non supprimable : identité de l'éditeur, coordonnées, immatriculation, et **identité de l'hébergeur**. | LCEN art. 6-III-1 : « Les personnes dont l'activité est d'éditer un service de communication au public en ligne » | **C** |
+| **BLOG2** | Champ `demande_droit_reponse` et registre horodaté des demandes, réponses et délais. Formulaire accessible depuis chaque page nommant une personne. | LCEN art. 6-IV, verbatim : « **Toute personne nommée ou désignée dans un service de communication au public en ligne dispose d'un droit de réponse** » | **C** |
+| **BLOG3** | Consentement préalable aux traceurs non nécessaires, et preuve du consentement conservée. | Art. 82 de la loi n° 78-17 modifiée. **Non lu dans cette session** | **D** |
+| **BLOG4** | Pour tout contenu reprenant une source de presse : champs `citation_auteur`, `citation_source`, `citation_date_parution` **non nuls**, plus `autorisation_l218_2_ref`. Blocage si l'un manque. Et longueur maximale paramétrée **par titre**, pas globale. | CPI **L218-2** (autorisation requise) ; **L211-3-1** (l'exception de très courts extraits tombe si l'usage « dispense le lecteur de s'y référer ») ; **L122-5 3° a)** (nom de l'auteur et source obligatoires pour la courte citation) | **B-miroir** |
+| **BLOG5** | Champ `responsable_editorial_id` non nul sur tout article publié. C'est ici — et non sur les réponses à avis — que l'exonération de l'art. 50(4) al. 2 joue réellement. | Règlement IA art. 50(4) al. 2, exception verbatim : « lorsque le contenu généré par l'IA a fait l'objet d'un processus d'examen humain ou de contrôle éditorial et lorsqu'une personne physique ou morale **assume la responsabilité éditoriale** » | **B-miroir** |
+| **BLOG6** | Conservation du journal éditorial T5 **au-delà du délai de prescription** de l'action en diffamation, soit plus de trois mois à compter de la publication. Recommandation : un an. | Loi du 29 juillet 1881. **Article de prescription non lu** | **D** |
+
+### 9.3 Veille — ce qu'un rapport peut contenir, et ce qu'il ne peut pas rediffuser
+
+Cette section est entièrement nouvelle et c'est celle qui a le plus changé ma compréhension du dossier.
+
+| # | Spécification technique | Fondement | Cran |
+|---|---|---|---|
+| **VEI1** | **Le rendu client ne doit avoir aucun chemin de lecture vers le corps des articles.** Le texte intégral capté vit dans une table séparée, accessible à l'indexation et à l'analyse, **jamais au moteur de rendu**. Le rapport ne contient que des **hyperliens et des analyses**. | CFC, *Prestataires de veille* : le contrat autorise « extraire, reproduire, indexer et stocker des contenus de sites de presse afin de fournir à ses clients […] des **analyses et des hyperliens** » ; et verbatim : « **Aucune reproduction de contenus destinée aux clients n'est autorisée dans le cadre de ce contrat** » | **B** |
+| **VEI2** | Champ `date_fin_prestation` par client, et purge automatique du stock capté à son échéance. | CFC, même page : « **La durée de stockage est limitée à la réalisation des prestations de veille web commandées** » | **B** |
+| **VEI3** | Export de déclaration trimestrielle produit par le logiciel : liste des clients, nombre de prestations par client, **liste des hyperliens transmis à chaque client pour chaque titre de presse du répertoire**. Donc champ `titre_presse_repertoire_cfc` sur **chaque élément capté**, renseigné à la collecte. | CFC : déclarations « au début de chaque trimestre […] la liste des clients et le nombre de prestations […] la liste des hyperliens transmis à chaque client, pour chaque titre de presse utilisé du répertoire » | **B** |
+| **VEI4** | Champ `territoire_autorise`. Les titres français du répertoire autorisent la prestation dans le monde entier ; **les titres étrangers seulement sur le territoire français**. | CFC, FAQ Licence veille web, verbatim | **B** |
+| **VEI5** | Champ `dans_repertoire_cfc` (booléen). Un titre hors répertoire est **exclu de la collecte** ou fait l'objet d'un contrat direct avec l'éditeur. Pas de troisième voie. | Le répertoire est la liste des titres dont le CFC gère les droits ; hors répertoire, la licence ne couvre rien | **B appliqué** |
+| **VEI6** | Champ `licence_web_client_ref`. La fonction « partager » ou « exporter » du rapport est **désactivée** tant qu'il est nul. | CFC, verbatim : « Si ces contenus sont ensuite rediffusés par l'entreprise destinataire, **celle-ci doit à son tour obtenir du CFC une licence** » ; et la *Notice Licence Web* impose en outre à l'organisation d'« indiquer au CFC le nom du prestataire qu'elle a choisi » | **B** |
+| **VEI7** | Les données personnelles contenues dans un rapport de veille (noms cités dans la presse) relèvent du § 2.3 : base légale documentée, information, droit d'opposition. Un rapport interne n'y échappe pas. | RGPD ; un usage interne n'est pas une exemption | **B appliqué** |
+
+**Et une correction à mon propre § F4 du premier fichier.** J'y écrivais qu'il faudrait « deux
+licences (CFC + DVP) ». **C'est inexact, et la bonne nouvelle est significative.** Le CFC écrit,
+verbatim, sur sa page *Mandat veille web+* (`cfcopies.com/secteurs/auteurs-editeurs/mandat-veille-web`,
+consultée le 2 octobre 2026, **cran B**) :
+
+> « Les acteurs du marché de la veille web, en tant que service de communication en ligne, sont
+> redevables à la fois au titre du **droit d'auteur** et au titre du **droit voisin** des agences et
+> éditeurs de presse. »
+
+> « Concernant la veille BtoB, **le CFC gère le droit voisin de la presse des éditeurs adhérents à DVP
+> dans le cadre de l'accord conclu entre DVP et le CFC**. Pour les non-adhérents, le CFC gère le droit
+> voisin des éditeurs de presse directement via le mandat veille web+. »
+
+**Donc un seul contrat, avec le CFC, couvre les deux droits.** Il n'y a pas de négociation séparée à
+mener avec DVP. C'est un guichet unique, et cela change le calendrier du § 10.2 dans le bon sens.
+
+---
+
+## 10. Le coût et le calendrier de la conformité, avant le premier euro de revenu
+
+### 10.1 La licence de veille presse — chiffrée, et c'est le nombre qui décide du périmètre
+
+J'ai trouvé un **contrat CFC Licence Veille Web réel**, avec ses montants, publié sur un agrégateur de
+contrats (`lawinsider.com/fr/contracts/83tbVgYardO`, consulté le 2 octobre 2026). C'est le contrat
+d'un autre cocontractant, non daté : **cran D12 pour le montant**. Mais le ratio qu'il révèle est
+**confirmé mot pour mot par le CFC lui-même** et passe donc en **cran B**.
+
+Article 4.1.1, au titre du **droit d'auteur**, verbatim :
+
+> « **105 €HT par trimestre et par prestation souscrite par client** (soit 35 €HT/mois et 420 €HT/an),
+> après remise sur la redevance fixée initialement à 200 €HT par trimestre. »
+
+Article 4.1.2, au titre du **droit voisin des éditeurs de presse**, verbatim :
+
+> « **52,50 €HT par trimestre et par prestation souscrite par client** (soit 17,5 €HT/mois et
+> 210 €HT/an). »
+
+Et le CFC écrit publiquement, sur sa page *Mandat veille web+* (**cran B**) : « La valorisation de la
+veille web prévue au titre du droit voisin s'élèvera, par prestation de veille, à **50 % des montants
+dus au titre du droit d'auteur**. » **52,50 est exactement 50 % de 105.** Le contrat est donc cohérent
+avec la doctrine tarifaire publiée de l'organisme. C'est la meilleure corroboration disponible sans
+appeler le CFC.
+
+**Le coût, par client et par mois :**
+
+| Poste | Par trimestre | Par mois | Par an |
+|---|---|---|---|
+| Droit d'auteur | 105 € HT | 35 € HT | 420 € HT |
+| Droit voisin presse | 52,50 € HT | 17,50 € HT | 210 € HT |
+| **Total par client** | **157,50 € HT** | **52,50 € HT** | **630 € HT** |
+
+Quatre précisions qui comptent, toutes tirées du contrat ou des pages CFC (**B** sauf le montant) :
+— la redevance est **par prestation souscrite par client**, non divisible, au prorata du mois
+  calendaire ;
+— facturation trimestrielle, règlement à **45 jours fin de mois**, et majoration de **trois fois le
+  taux d'intérêt légal** en cas de retard ;
+— des tarifs réduits existent pour les clients situés **hors des territoires français et monégasque**
+  (40 € ou 20 € HT par trimestre). **La Guadeloupe est un territoire français : plein tarif.** C'est,
+  ironiquement, le seul endroit où le statut de région ultrapériphérique a une conséquence
+  économique directe et défavorable dans tout ce dossier ;
+— le tarif est révisable annuellement, le CFC informant au plus tard le 31 octobre.
+
+**L'implication, et elle tranche un nœud du § 10 du document cible.** À **52,50 € HT par mois et par
+client de pure redevance**, un produit vendu 80 € par mois **ne peut pas** contenir le volet veille
+presse : la licence mangerait les deux tiers du prix avant toute infrastructure et toute heure de
+travail. Le module veille presse doit être **facturé séparément et pas en dessous d'environ 100 à
+120 € HT par mois**. La recommandation du § 6.3 du premier fichier — faire du module presse un article
+distinct conditionné à la licence du client — n'est donc plus une préférence de modèle : **c'est une
+contrainte arithmétique.**
+
+**Et le volet publication sociale est encore plus contraint.** CFC, *Notice Licence Web* (celle que le
+**client** doit signer pour republier, `cfcopies.com/media/851/download/Notice-Licence-Web.pdf`,
+consultée le 2 octobre 2026, **cran B**) : **« Redevance par article 50 €HT / 100 €HT / 150 €HT »**,
+avec « un maximum de 100 articles par an mis en ligne », un abattement de 20 % au-delà de 10 articles
+et de 30 % au-delà de 50, et la règle verbatim : « **Un même article publié sur un site internet et
+sur une page de réseau social compte pour deux articles.** »
+
+→ Un article de presse locale repris sur le site du client **et** sur sa page Facebook compte pour
+deux articles, soit **100 à 300 € HT**. **La republication de contenu de presse dans le volet
+publication automatique est économiquement morte.** La spécification PUB7 n'est donc pas une
+contrainte à gérer : c'est une décision de produit à prendre une fois pour toutes. L'outil de
+publication ne porte **jamais** d'extrait de presse. Il porte des liens, et le lien est libre
+(CPI L211-3-1 1°, « Les actes d'hyperlien »).
+
+**Et pour mémoire, si l'on voulait un jour livrer du texte d'article et pas seulement des liens** : on
+basculerait de la Licence Veille Web forfaitaire à la **Licence Veille Média**, dont le contrat
+(`cfcopies.com/media/526/download/CFC-LICENCE-VEILLE-MEDIA.pdf`, consulté le 2 octobre 2026, **cran B**)
+prévoit « une redevance **pour chaque reproduction d'article de presse effectivement fournie à chacun
+de ses clients** », sur une grille de dix niveaux de **0,40 € à 2,20 €** par article, au choix de
+chaque éditeur. On passerait d'un forfait à un compteur, et le compteur est incontrôlable.
+
+**Qui paie déjà cela, et par quel guichet.** Le CFC écrit : « **49 plateformes de veille d'information
+ont signé des licences avec le CFC. 37 d'entre elles ont signé une licence veille web** », et nomme
+« KB Crawl, Talkwalker, Sindup » (**cran B**). Voilà la réponse exigée par le § 9 du document cible
+pour ce métier : **guichet 4, trente-sept acteurs documentés, trois nommés par l'organisme lui-même.**
+Aucune supposition.
+
+### 10.2 Le délai d'obtention des accès, plateforme par plateforme
+
+| Plateforme | Délai | Nature de l'obstacle | Cran |
+|---|---|---|---|
+| **Google** | Annoncé 7-10 jours ouvrés. **Constaté : trois demandes entre le 3 et le 27 août 2026, aucune réponse, quota à 0** ; et l'endpoint v4 des avis non débloqué par l'agrément. | **Ce n'est pas un délai, c'est une porte.** À traiter comme un risque binaire, testé au § 10.6. | **C** |
+| **Meta** | Non publié. App Review + vérification d'entreprise + captation vidéo du parcours. | Procédure documentée, délai inconnu. | **D14** |
+| **Airbnb** | Non publié. Estimation de tiers : « weeks to months, with a real chance of no ». NDA, API Terms, Partner Specific Terms, **revue de sécurité des données**. | Agrément d'entreprise, plus une **obligation permanente** : « implementing all mandatory API features **within 6 months of their release** ». | **C** / **D14** |
+| **Booking** | Non publié. Accord de partenariat de connectivité + permission `review-api` sur le compte machine. | Accord entre entreprises. | **D14** |
+| **Expedia** | Non publié. Partenaire de connectivité. | Accord entre entreprises. | **D14** |
+| **TripAdvisor** | Sans objet pour la réponse : **aucun endpoint n'existe**, à aucun délai. | Lecture sous licence négociée, plafonnée à 5 avis. | **B** |
+| **CFC** | Non publié. Contrat type, signature, puis déclarations trimestrielles. | Le seul guichet de ce dossier qui soit **ouvert, tarifé et sans agrément préalable**. | **B** |
+
+**La conséquence de calendrier, et elle commande l'ordre de construction.** Les seules portes
+franchissables sans accord inter-entreprises sont **Google** et **Meta** — et Google est, selon trois
+témoignages concordants, fermée. Donc le produit livrable en V0, sans attendre aucun agrément, c'est :
+**la collecte d'avis en première main par enquête, la lecture Meta, et la veille sous licence CFC.**
+Tout le reste — Booking, Expedia, Airbnb, TripAdvisor — est un projet de partenariat à mener en
+parallèle, sur un calendrier qui n'est pas le nôtre. **Ce n'est pas un choix de périmètre, c'est le
+seul ordonnancement possible.**
+
+### 10.3 L'avis juridique — en unités de travail, pas en euros
+
+Je n'ai relevé aucun tarif d'avocat sur source primaire : **cran D13**, et je ne donnerai pas de
+chiffre de mémoire. Ce que je peux faire, et qui est plus utile, c'est **découper les 21 questions du
+§ 4 en quatre consultations séparables et les ordonner**, pour qu'on n'achète que ce dont on a besoin
+maintenant.
+
+| Lot | Questions | Quand | Ce qui est bloqué sans lui |
+|---|---|---|---|
+| **A — le lot qui décide** | **J1, J2, J4, J5, J6**, plus **J17** et **J18** | **Avant la première ligne de code du volet avis** | L'existence du volet avis. J6 (art. 14.5 b RGPD) et J2 (date d'expérience quand la source ne la fournit pas) peuvent l'arrêter à eux seuls. |
+| **B — le lot presse** | **J10**, plus la relecture du contrat CFC avant signature | Avant de signer la licence CFC | Le volet veille. Mais le CFC étant un contrat type, le risque juridique est faible ; c'est surtout une relecture d'engagement. |
+| **C — le lot éditorial** | **J15, J16** | Avant la mise en ligne du blog et de la publication automatique | Rien en V0 si l'on applique P1 et BLOG5 par défaut, c'est-à-dire si l'on est prudent sans savoir. |
+| **D — le lot propriété intellectuelle** | **J11, J12, J13, J14, J20, J21** | V2 ou plus tard | Rien d'opérationnel. **Sauf J14**, qui est la seule voie permettant de lire une base d'avis sans guichet : si la réponse est favorable, elle change l'architecture, donc elle vaut d'être posée tôt même sans être bloquante. |
+
+**Recommandation : acheter le lot A seul, d'abord.** C'est le seul qui puisse arrêter le projet, et
+les trois autres ne sont pas nécessaires avant V2 ou V3.
+
+### 10.4 Le coût humain récurrent, par client et par mois
+
+C'est la demande la plus précise du coordinateur, et voici l'arithmétique. **Attention : elle repose
+sur une hypothèse de volume qui est en cran D et qui est la première mesure de V0.**
+
+**Hypothèse de volume, cran D :** un établissement guadeloupéen de petite taille reçoit de l'ordre de
+**10 à 40 avis par mois**, toutes plateformes confondues. Je n'ai aucune mesure. **C'est une ligne du
+jeu d'épreuve de V0, et tout ce tableau doit être recalculé une fois qu'elle existe.**
+
+| Geste humain irréductible | Fréquence | Durée unitaire | Temps mensuel |
+|---|---|---|---|
+| **P1** — validation d'une réponse générée avant publication, par lot sur mobile | 10 à 40 /mois | 30 s | **5 à 20 min** |
+| **P1** — validation d'une publication sociale (référence : 8 publications/mois, le format MangoWeb) | 8 /mois | 30 s | **4 min** |
+| Reprise des réponses rejetées par la modération de plateforme (`etat_reponse = rejetee`) — Google renvoie un `policyViolation`, Booking modère sous 48-72 h, Expedia notifie par webhook | variable | — | **≈ 5 min** |
+| **VEI3** — déclaration trimestrielle au CFC | 1 /trimestre | — | **0 min si le logiciel l'émet** ; plusieurs heures sinon |
+| **Total** | | | **≈ 15 à 30 min / client / mois** |
+
+À un coût horaire chargé de 30 à 40 €, cela fait **8 à 20 € HT par client et par mois de geste humain
+incompressible**, avant toute infrastructure et avant toute licence.
+
+**Le prix plancher, construit par le bas :**
+
+| Composant | Sans module presse | Avec module presse |
+|---|---|---|
+| Geste humain (§ 10.4) | 8 à 20 € HT | 8 à 20 € HT |
+| Licence CFC veille (§ 10.1, **D12**) | 0 € | **52,50 € HT** |
+| Infrastructure et modèle génératif | non chiffré | non chiffré |
+| **Plancher avant marge** | **≈ 10 à 25 € HT** | **≈ 65 à 80 € HT** |
+| **Prix de vente tenable** | **25 à 35 € HT/mois** | **pas en dessous de 100 à 120 € HT/mois** |
+
+**Et ces deux nombres tombent exactement dans la bande vide identifiée au § 8.1** — entre le gratuit
+des outils et les 200 € de l'agence humaine. Le produit sans presse se place à 25-35 €, au-dessus du
+bruit gratuit et très loin sous l'agence. Le produit avec presse se place à 100-120 €, toujours sous
+l'agence la moins chère qui réponde aux avis (450 € HT chez Plateya). La structure de coût confirme le
+positionnement ; elle n'a pas été construite pour le confirmer.
+
+**La ligne la plus importante du tableau est VEI3.** La déclaration trimestrielle au CFC exige, pour
+chaque client, la liste des hyperliens transmis **par titre de presse du répertoire**. Si le champ
+`titre_presse_repertoire_cfc` n'est pas renseigné à la collecte, cette déclaration se reconstitue à la
+main, chaque trimestre, pour chaque client. **C'est le seul endroit du produit où une omission de
+schéma se transforme directement en heures de travail récurrentes et croissantes.** Construire VEI3
+dès le premier jour est le meilleur investissement de conformité de tout ce dossier.
+
+### 10.5 Ce qui n'est pas chiffrable, et pourquoi
+
+| Poste | Pourquoi je ne le chiffre pas |
+|---|---|
+| Le tarif CFC qui nous serait appliqué | Le contrat lu mentionne une « remise sur la redevance fixée initialement à 200 €HT par trimestre ». Notre tarif se négocie. **Fourchette plausible : 52,50 à 90 € HT/mois/client. Cran D12.** Un appel au CFC le résout — c'est un organisme qui publie ses contrats, pas un fournisseur opaque. |
+| Les délais d'accès Booking, Expedia, Airbnb, Meta | Aucune durée publiée. **D14.** Seul un dépôt réel de demande les mesure. |
+| L'avis juridique | Aucun tarif sur source primaire. **D13.** Le § 10.3 le rend au moins ordonnançable. |
+| La certification **NF Service Avis en ligne** | Guest Suite la détient et en fait un argument ; je n'ai trouvé aucun tarif AFNOR. C'est potentiellement le **prix d'entrée pour concourir sur L121-4 27°**, donc un coût qu'il faut connaître avant de promettre la vérification. |
+| Une éventuelle demande de **DVP** | Aucun barème publié pour un service en ligne autre qu'un moteur de recherche. **Atténué** : le § 9.3 établit que le CFC couvre le droit voisin par son accord avec DVP, donc le risque d'une seconde facture est faible pour les titres gérés par le CFC. |
+| L'infrastructure et le coût du modèle génératif | Hors de mon angle. |
+
+### 10.6 Les tests à moins de cent euros qui lèvent les inconnues les plus chères
+
+Trois tests, quinze euros au total, et ils résolvent dans l'ordre les trois conclusions dont l'erreur
+coûterait le plus.
+
+| Test | Coût | Ce qu'il résout | Cran visé |
+|---|---|---|---|
+| **1. L'accès Google** — créer un projet Cloud, tenter `gcloud services enable mybusiness.googleapis.com`, déposer la demande de Basic API Access, faire accorder un accès gestionnaire par un seul hôtelier, appeler `reviews.list`. | **0 €** | Le § 1.2, c'est-à-dire la conclusion dont l'erreur coûte le plus cher au projet. **Et le résultat du jour 1 est déjà la moitié de la réponse.** | C → **A-usage** |
+| **2. Le tri par la note** — un mois de Meditrust, brancher le widget sur une page jetable, capture d'écran horodatée du tri par défaut. | **5,95 €** | Transforme « leur page de vente le dit » en « je l'ai installé, voici la sortie ». C'est aussi la démonstration commerciale à montrer à un hôtelier. | B → **A-usage** |
+| **3. Le marquage IA** — un mois de Buffer Essentials sur un canal, publier une publication rédigée par l'assistant IA, et inspecter la sortie publiée : métadonnées, filigrane, signal de provenance. | **6 $** | **D15**, c'est-à-dire si la couche de publication porte déjà le marquage de l'art. 50(2) ou non. C'est la seule façon de le savoir. | **D15** → **A-usage** |
+
+`gcloud` est **déjà installé dans cet environnement**. Le test 1 est donc exécutable sans rien
+installer ; je ne l'ai pas lancé parce qu'il exige un compte Google du projet, c'est-à-dire une
+décision de Laurent et non une initiative d'agent.
+
+---
+
+## 11. Ce que tout cela fait à la stratégie
+
+Quatre phrases, et elles s'appuient toutes sur des lignes B de ce fichier.
+
+**Un.** Le marché guadeloupéen n'a pas de concurrent à 80 € : il a des outils gratuits à 30 €, puis un
+trou, puis des agences humaines à 200-700 €. Le produit se place dans le trou, et la structure de coût
+du § 10.4 y tombe toute seule — **25 à 35 € HT sans la presse, 100 à 120 € HT avec**.
+
+**Deux.** Le trou est vide pour une raison identifiée : **la conformité est un geste humain, et les
+outils bon marché vendent précisément de l'avoir supprimé — au point que Buffer et Metricool facturent
+le double pour le réintroduire.** L'angle du produit est donc d'automatiser tout **sauf** la porte, et
+de rendre la porte assez peu coûteuse — par lot, trente secondes, sur mobile — pour qu'elle tienne
+dans trente euros. Personne ne l'a fait.
+
+**Trois.** La position de vente n'est pas « la conformité » : Guest Suite la vend déjà, certifiée
+AFNOR. Elle est **l'affichage loyal de l'avis agrégé, ou son refus assumé** — parce que la date
+d'expérience n'existe pas chez Google, parce que Booking interdit l'affichage public des siens, et
+parce que les conditions de TripAdvisor sont incompatibles avec un affichage loyal en France. Personne
+ne peut afficher loyalement un avis agrégé ; nous pouvons être les seuls à le dire.
+
+**Quatre.** Le volet presse est le seul du périmètre qui ait un prix d'entrée connu et incompressible,
+**52,50 € HT par client et par mois** (D12), et le seul dont la republication sur les réseaux sociaux
+soit économiquement morte, **50 à 150 € HT par article, compté double entre site et réseau social**
+(B). Il doit donc être un article distinct, activé sur référence de licence du client. Et son guichet
+est **ouvert, tarifé, sans agrément préalable** — ce qui en fait, paradoxalement, le seul guichet du
+dossier dont l'ouverture ne dépende pas du bon vouloir d'une plateforme.
