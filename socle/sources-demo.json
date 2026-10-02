@@ -1,0 +1,20 @@
+{
+  "_note": "Source de DEMONSTRATION locale. Les sources guadeloupeennes reelles sont bloquees par la politique de sortie reseau de l'environnement d'analyse (403 au CONNECT). Ce fichier sert a prouver que la chaine tourne, pas a mesurer le terrain.",
+  "sources": [
+    {
+      "nom": "Banc local de demonstration",
+      "url_base": "http://127.0.0.1:8731/index.html",
+      "guichet": "6",
+      "licence_spdx": "CC0-1.0",
+      "licence_nom": "domaine public (pages generees pour le banc)",
+      "licence_url": null,
+      "licence_lue_le": "2026-10-02",
+      "attribution_texte": "Banc local — pages generees par le socle lui-meme",
+      "cgu_url": null,
+      "cgu_lues_le": "2026-10-02",
+      "debit_max_rps": 5.0,
+      "verdict": "retenu",
+      "motif_verdict": "Pages generees localement pour le banc. Aucune question de droit."
+    }
+  ]
+}

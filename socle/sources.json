@@ -1,0 +1,94 @@
+{
+  "_note": "Registre de qualification. UNE FICHE PAR SOURCE, jamais par plateforme.",
+  "_licence_verifiee": {
+    "etalab-2.0": {
+      "cran": "B",
+      "texte_lu": "https://github.com/etalab/licence-ouverte, fichier LO.md",
+      "lu_le": "2026-10-02",
+      "reutilisation_commerciale": "autorisee explicitement, monde entier, duree illimitee, gratuite",
+      "droit_sui_generis": "CEDE par le concedant — l'obstacle juridique du guichet 5 est leve ici",
+      "obligation": "mentionner le nom du concedant ET la date de derniere mise a jour de l'information reutilisee ; une URL y suffit",
+      "interdiction": "ne pas suggerer une caution officielle ; ne pas induire en erreur sur le contenu, la source ou la date",
+      "donnees_personnelles": "RGPD reste pleinement applicable"
+    }
+  },
+  "_avertissement_de_cran": "Le TEXTE de la Licence Ouverte 2.0 est lu et verifie (cran B). L'ATTACHEMENT de cette licence a chacun des jeux ci-dessous est en cran D : data.gouv.fr est bloque par la politique de sortie reseau de l'environnement d'analyse. Chaque ligne licence_lue_le est a null tant que la page du jeu n'a pas ete ouverte. LE COLLECTEUR NE DOIT PAS TOURNER SUR UNE SOURCE DONT licence_lue_le EST NULL.",
+
+  "sources": [
+    {
+      "nom": "BODACC — annonces civiles et commerciales",
+      "url_base": "https://bodacc-datadila.opendatasoft.com/",
+      "guichet": "6",
+      "licence_spdx": "etalab-2.0",
+      "licence_nom": "Licence Ouverte 2.0",
+      "licence_url": "https://github.com/etalab/licence-ouverte/blob/master/LO.md",
+      "licence_lue_le": null,
+      "attribution_texte": "Source : DILA / BODACC — derniere mise a jour : <date du jeu>",
+      "cgu_url": null,
+      "cgu_lues_le": null,
+      "debit_max_rps": 0.5,
+      "verdict": "retenu_sous_conditions",
+      "motif_verdict": "Flux hebdomadaire a forte valeur B2B : creations, cessions, procedures collectives, par departement. Conditionne a la lecture effective de la licence du jeu (cran D aujourd'hui)."
+    },
+    {
+      "nom": "DECP — donnees essentielles des marches publics",
+      "url_base": "https://data.economie.gouv.fr/",
+      "guichet": "6",
+      "licence_spdx": "etalab-2.0",
+      "licence_nom": "Licence Ouverte 2.0",
+      "licence_url": "https://github.com/etalab/licence-ouverte/blob/master/LO.md",
+      "licence_lue_le": null,
+      "attribution_texte": "Source : ministere de l'Economie / DECP — derniere mise a jour : <date du jeu>",
+      "cgu_url": null,
+      "cgu_lues_le": null,
+      "debit_max_rps": 0.5,
+      "verdict": "retenu_sous_conditions",
+      "motif_verdict": "Marches attribues par les collectivites guadeloupeennes. Publication obligatoire, donc flux stable et non negociable par un editeur."
+    },
+    {
+      "nom": "Meteo-France donnees ouvertes — vigilance",
+      "url_base": "https://meteo.data.gouv.fr/",
+      "guichet": "6",
+      "licence_spdx": "etalab-2.0",
+      "licence_nom": "Licence Ouverte 2.0",
+      "licence_url": "https://github.com/etalab/licence-ouverte/blob/master/LO.md",
+      "licence_lue_le": null,
+      "attribution_texte": "Source : Meteo-France — derniere mise a jour : <date du jeu>",
+      "cgu_url": null,
+      "cgu_lues_le": null,
+      "debit_max_rps": 0.2,
+      "verdict": "retenu_sous_conditions",
+      "motif_verdict": "Saison cyclonique du 1er juin au 30 novembre : exigence guadeloupeenne n.3 du prompt de lancement. Sert aussi de declencheur operationnel pour les clients."
+    },
+    {
+      "nom": "Recueil des actes administratifs — prefecture de Guadeloupe",
+      "url_base": "https://www.guadeloupe.gouv.fr/",
+      "guichet": "5b",
+      "licence_spdx": null,
+      "licence_nom": "non declaree",
+      "licence_url": null,
+      "licence_lue_le": null,
+      "attribution_texte": null,
+      "cgu_url": null,
+      "cgu_lues_le": null,
+      "debit_max_rps": 0.2,
+      "verdict": "retenu_sous_conditions",
+      "motif_verdict": "CONTRE-EXEMPLE VOLONTAIRE, garde dans le registre pour montrer la nuance : un portail institutionnel n'est PAS automatiquement en guichet 6. Sans licence declaree, c'est du 5b, pas du 6. A requalifier apres lecture des mentions legales."
+    },
+    {
+      "nom": "Presse locale — toutes sources",
+      "url_base": "https://presse-locale.invalide/",
+      "guichet": "4",
+      "licence_spdx": null,
+      "licence_nom": "licence de contenu payante requise",
+      "licence_url": null,
+      "licence_lue_le": null,
+      "attribution_texte": null,
+      "cgu_url": null,
+      "cgu_lues_le": null,
+      "debit_max_rps": 0.0,
+      "verdict": "ecarte",
+      "motif_verdict": "Droit voisin des editeurs de presse. L'exception de courte citation tombe des que l'extrait dispense de se referer a l'article, ce qui est la definition meme d'un produit de veille. Voie licite = licence payante aupres d'un organisme de gestion collective, donc guichet 4 et non guichet 6. Entree gardee ici pour que le declencheur source_ecartee_inactive la desactive et qu'aucun collecteur ne la touche par accident."
+    }
+  ]
+}
