@@ -17,14 +17,27 @@ Une proposition non attaquée est une opinion. Cette compétence remplace les re
 
 Elle existe parce que trois gestes ont rapporté davantage que tout le reste : cadrer avant de répondre, faire casser par un lecteur qui n'a pas produit, et relancer chaque lecteur sur les trous qu'il avoue lui-même.
 
+## Les outils que cette compétence appelle au lieu de les refaire
+
+Elle ne réécrit rien de ce que le système de Laurent tient déjà. Règle du loyer appliquée à elle-même.
+
+| Besoin | Outil existant | Ce que cette compétence ajoute |
+|---|---|---|
+| Cadrer la demande avant d'y répondre | **`cadreur`**, marqueur « >>+ » | Rien. **L'appeler.** Elle fait déjà le dépliage, la reformulation et l'arrêt sur validation |
+| Juger un artefact produit ailleurs | **`double-lecture`**, formule « DDCC », session neuve obligatoire | Rien, et surtout ne pas la contourner : la démolition par lecteurs internes **ne la remplace pas**, parce que la session qui produit ne peut pas être celle qui juge |
+| Ouvrir et clore un projet du Container | **`ouverture-projet`** et **`fermeture-projet`** | Rien. Le registre de démarche est le **fichier** du dépôt ; ces skills tiennent les **tableaux Notion**. Les deux, pas l'un ou l'autre |
+| Recadrer la posture en cours de route | **`rappel-determinants`**, marqueur « ***// » | Rien |
+| Choisir le livrable à produire | **`proposer-modes`** | Rien |
+
 ## Temps 1 — Cadrer, et s'arrêter
 
-Avant toute recherche, tout agent, tout fichier.
+Avant toute recherche, tout agent, tout fichier. **Appeler `cadreur`.** Si la demande est déjà nette, cette skill reste muette, et c'est le bon comportement.
 
-1. **Énumérer ce qu'on lit** dans la demande, élément par élément, avec un **pourcentage de compréhension** par élément et une moyenne. Sous 80 %, on ne lance rien
-2. **Nommer les nœuds** — les endroits où deux lectures mènent à des travaux différents. Pour chacun, **trancher un avis**, jamais survoler les options
-3. **Dire ce qui est incompatible dans la demande.** C'est le geste le plus utile et le plus désagréable. Une demande contient souvent deux souhaits qui s'excluent, et le dire tôt économise une vague entière
-4. **S'arrêter.** Attendre. Un cadrage validé vaut dix heures de travail juste ; un cadrage supposé les perd
+Trois exigences propres à une conduite par vagues, qui s'ajoutent au cadrage :
+
+1. **Un pourcentage de compréhension** par élément de la demande, et sa moyenne. Sous 80 %, on ne lance aucune vague
+2. **Dire ce qui est incompatible dans la demande.** Le geste le plus utile et le plus désagréable : une demande contient souvent deux souhaits qui s'excluent, et le dire tôt économise une vague entière
+3. **S'arrêter.** Un cadrage validé vaut dix heures de travail juste ; un cadrage supposé les perd
 
 ## Temps 2 — Instruire par vagues
 
@@ -78,8 +91,15 @@ Toute annonce faite dans une réponse — *je vais écrire*, *je propose de*, *j
 ## Temps 6 — Clore
 
 — Verser au registre de démarche, par la compétence `registre-de-demarche` : les renversements, les faits, les décisions, les désaccords, les murs, le lexique
+— Si le sujet est un projet du Container, appeler **`fermeture-projet`** pour les tableaux Notion. Le fichier et les tableaux ne se remplacent pas
 — Lister **ce qui attend une décision, trié par coût croissant.** Les actions gratuites en tête : ce sont celles qui dorment, et ce sont souvent les plus décisives
 — Committer et pousser. Un conteneur est éphémère
+
+## Temps 7 — Le juge extérieur
+
+La démolition du temps 3 est faite par des lecteurs que cette session a lancés. Ils sont à contexte vierge, mais ils travaillent sous la consigne de celui qui a produit — donc ils ne sont pas indépendants au sens plein.
+
+**Avant toute décision lourde, demander à Laurent de lancer un `DDCC` en session neuve** sur le livrable. C'est la seule lecture dont l'indépendance est entière, et sa condition de validité est qu'elle ne soit pas déclenchée par le producteur. Ne jamais l'invoquer soi-même : ce serait détruire ce qui fait sa valeur.
 
 ## Ce que cette compétence refuse
 
