@@ -109,6 +109,42 @@ La règle de la section 5 s'applique à partir des lecteurs du plan de construct
 
 | Calendrier externe | **38** | 24 | 7 | 7 | **27 adresses primaires pour 27 affirmations — écart zéro** · 3 `D` déclarées |
 | Trésorerie | **25** | 9 | 0 | 8 | **22 affirmations en source primaire pour 7 adresses → 15 lignes rétrogradées par lui-même**, le compte donné spontanément |
+| Cohérence interne | court, assumé | — | — | — | Source primaire = le plan et le registre. **Trouvaille majeure hors brief, voir ci-dessous** |
+
+### La faute que personne ne cherchait, et elle est de moi
+
+Comptage mécanique : **les neuf retours de fond ne contiennent aucun couple à deux axes.** Soixante-cinq mentions d'un cran, toutes sur un seul axe. Les trente occurrences du barème à deux axes ne vivent que dans les deux fichiers de doctrine, et **les quatre retours écrits après sa réparation ne l'emploient pas**.
+
+**Donc les trente-deux couples du plan de construction ont été attribués après coup par moi, à des affirmations d'autrui dont les auteurs n'avaient jamais déclaré la robustesse.** Deux conversions successives, aucune par l'auteur de la ligne.
+
+Et l'écart que la compétence prévoit de publier **n'a jamais été calculé sur les crans : il vaut zéro sur neuf.** Le contrôle existait sur le papier, personne ne l'a lancé — moi le premier.
+
+**Application** : neuf des quatorze lignes en source primaire du plan tombent. Les lignes porteuses passent de **27 sur 32 à 16 sur 32**. **Les quatre piliers de la convergence tombent**, trois venant du même fichier à zéro adresse.
+
+### La correction de doctrine, et elle est capitale
+
+La sanction appliquée symétriquement n'est pas freinante, **elle est dangereuse** : six des neuf lignes qui tombent sont des **interdictions**. Lever « on ne vend pas de gestion d'avis à un médecin » en attendant une meilleure preuve coûterait une faute disciplinaire chez le client.
+
+> **La descente d'un cran s'applique à ce qui AUTORISE. Jamais à ce qui INTERDIT ou ARRÊTE.**
+
+Deux corollaires gratuits : **un numéro de ligne vaut une adresse** pour une source interne au dépôt ; et **un calcul n'est pas une source** — le barème n'a pas de case pour le dérivé, il lui en faut une.
+
+### Le geste au meilleur rendement de tout le projet
+
+**Rouvrir une seule page** — le règlement professionnel republié par un ordre — **remonte sept lignes du plan d'un cran. Zéro euro, une demi-heure.**
+
+### La limite que ce lecteur pose sur lui-même, et sur les huit autres
+
+Il écrit : *même modèle que le producteur, donc une convergence entre nous est une corrélation*. Et : on lui a donné quatre contradictions à trouver, donc l'essentiel de son travail est de l'instruction, non de la découverte — **neuf trouvailles seulement ne venaient pas de son brief**, dont celle ci-dessus.
+
+Deux règles qui en sortent, contre moi :
+— **Interdire au producteur d'écrire l'angle du lecteur.** Un angle dicté produit de l'instruction déguisée en découverte
+— Il faut **un lecteur qui n'est pas Claude** sur les sept lignes disciplinaires : toute la doctrine juridique du projet remonte à un seul modèle lisant des documents qu'il ne peut plus réouvrir
+
+### Le trou que ce lecteur refuse de combler de mémoire, et il a raison
+
+**Le verdict sur la licence à copyleft réseau** — la décision la plus structurante du volet publication — **n'a été vérifiée sur source par aucun lecteur.** Il refuse d'opiner sans la rouvrir. C'est le trou le mieux nommé de la session.
+
 
 **Zéro source primaire revendiquée par le premier, et c'est honnête** : il a mesuré au lieu de citer. Le second affiche un **écart nul**, a rétrogradé une de ses propres lignes contre son intérêt d'argumentation, et a corrigé quatre manquements trouvés par son propre audit mécanique. **La règle tient dès son premier jour d'application.**
 

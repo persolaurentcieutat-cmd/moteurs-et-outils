@@ -247,6 +247,37 @@ Toute annonce faite dans une réponse entre ici et n'en sort que quand l'objet e
 
 ---
 
+## 8 bis — Verdict des quatre lecteurs du plan de construction
+
+**Exécutable sur deux choses. Tunnel sur le reste.**
+
+| Partie | Verdict |
+|---|---|
+| Semaine 0, ses deux gestes gratuits | **Exécutable** |
+| Phase 1 | **Exécutable à condition d'ajouter ce que le plan a oublié** : quatre lectures de licence, la garde manquante dans le collecteur, une première page guadeloupéenne réelle |
+| Tout le reste | **Tunnel.** Zéro date dans tout le document. Cinq seuils dont **aucun ne peut se déclencher**. Aucun critère qui arrête le projet. Une porte de sortie qui ouvre sur une pièce vide |
+
+> Ce n'est pas un plan malhonnête — son code est honnête et ses chiffres se reproduisent à l'unité. C'est **un plan qui a confondu l'inventaire de ses preuves avec un calendrier.** Six dates et un prix le rendraient exécutable en entier ; il n'en a aucun.
+
+### Deux renversements de fond
+
+**Le client paie le temps, pas la provenance.** Démontré par le registre lui-même : la conformité **est** le geste humain, et les outils vendent de l'avoir supprimé. Le plan vend l'inverse.
+
+**La convergence à quatre usages se dissout** : une obligation est la nôtre, **deux ne concernent que les avocats** — le segment où aucune exigence locale ne s'applique — et la quatrième dépend d'une phase sans date. Et le constat qui va avec : **le plan travaille en détail le segment où il n'a aucun avantage, et consacre zéro ligne aux 760 établissements où il en a un.**
+
+### Le critère d'abandon global, que le plan n'avait pas
+
+Mesuré **sur le relevé bancaire seul** : le nombre de clients ayant payé **deux factures consécutives encaissées**.
+
+| Date | Seuil | Conséquence |
+|---|---|---|
+| **31 mars 2027** | Moins de 3 | On arrête la construction. Le socle redevient un outil interne |
+| **31 mars 2027** | De 3 à 10 | Gel. On sert à la main et on remonte le prix |
+| **30 septembre 2027** | Moins de 11 clients à 150 € HT ou plus | **La règle du loyer s'applique au plan lui-même** : on loue, on n'écrit plus |
+| **30 septembre 2027** | **Aucune ligne d'aucun rapport livré ne vient d'une source guadeloupéenne réelle** | **Le projet n'est pas guadeloupéen, et la décision du 2 octobre est tombée d'elle-même** |
+
+**Clause anti-report : une mesure non faite à la date compte comme un échec du seuil.**
+
 ## 9 — Point d'arrêt
 
 **Pause demandée par Laurent Cieutat le 2 octobre 2026.**
