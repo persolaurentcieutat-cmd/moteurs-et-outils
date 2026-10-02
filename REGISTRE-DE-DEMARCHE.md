@@ -48,6 +48,8 @@ Toutes sont de moi, sauf mention. C'est le registre le plus utile du document.
 | « Huit organes à reconstruire » | Méthode, `A·1` | Un et demi. L'extraction, l'index et la découverte existent et ont été mesurés |
 | « Le barème A B C D suffit » | Doctrine, `B·1` | Un axe pour deux questions. Le dédoublement du cran supérieur était le symptôme, et le verrou en découlait |
 | « Le mandat ne commande que le volet avis » | Doctrine, `B·2` | Publier sur les comptes d'un client exige la même délégation. Il commande **la moitié du produit, et la moitié qui agit** |
+| « Le fuseau et le créole sont des exigences discriminantes qui disqualifient des outils » | Technique, `A·1` | Les deux sont tenus par des briques libres existantes et mesurées. Elles ne disqualifient **rien** |
+| « L'organe de garde des accès ne doit pas exister » — ma conclusion après quatre agents | Technique, `A·1` | Nuance : il ne faut pas le **construire**, 97,8 années-auteur en face. Mais il existe en libre, mesuré, révocation en 123 ms. On l'**assemble** — et il reste nécessaire, un jeton d'autorisation étant un secret |
 | « La Guadeloupe est un avantage produit » | Marché **et** Marché-libéral, `B·2` | Les six exigences ne couvrent que 3,5 à 5,2 % du marché adressable. Nulle ne s'applique à un cabinet d'avocat |
 | Protocole de test : « déposer un avis portant un détail vérifiable » (proposé par l'agent marché) | Moi, `B·1` | Déposer un avis non fondé sur une expérience réelle enfreint l'obligation même que le projet veut tenir |
 | « Le prix plafond local est 80 €/mois » — relayé par moi à Laurent comme un fait | Droit, 3e tour, `B·2` | **Cette offre n'existe pas.** Pages de vente lues : le prestataire de Saint-Claude est à **200 €/mois, avis non inclus**. La moins chère qui réponde à tous les avis est à **450 € HT**. Le parapluie tarifaire est 2,5 à 5 fois plus haut |
@@ -90,6 +92,20 @@ Toutes sont de moi, sauf mention. C'est le registre le plus utile du document.
 | Prestataire tiers licite **à condition que la somme versée ne soit pas un partage d'honoraires** : facturer à l'abonnement, jamais à la performance | `B·2` | Règlement intérieur national |
 | Annoncer un taux de succès est une faute disciplinaire. **Un générateur de texte sans garde-fous métier produit une faute** | `B·2` | Avis déontologique, 2002 |
 | ⏳ Un avis de 2012 juge contraires les liens vers les réseaux sociaux, « n'offrant pas les garanties nécessaires ». Probablement dépassé par la réforme de 2020, mais **toujours republié en 2026**, donc opposable par un bâtonnier | `B·3` | Avis déontologique republié |
+| **Six organes sur huit : rien à construire**, trois briques libres vivantes chacun, licences SPDX lues dans les dépôts | `A·1` sauf une en `B·2` | Mesures en session, sorties collées |
+| Extraction : F1 0,9198 · précision 0,9329 · 25,3 ms par page · **zéro plantage sur 990 pages** | `A·2` — rétrogradé par l'agent lui-même : corpus à 438 pages allemandes et **zéro page guadeloupéenne** | Mesure en session |
+| Index : **1 ms au médian**, 375 documents par seconde, 20,7 Go au million. Noyau sous licence permissive, modules d'entreprise non libres | `A·1` | Mesure en session |
+| Garde des accès : chiffrement au repos prouvé, zéro fichier en clair sur trente et un, **révocation en 123 ms**, cloisonnement par client, journal haché | `A·1` | Mesure en session. **L'organe ne se construit pas — il s'assemble** |
+| Provenance : chaîne signée, contrôle négatif passé, falsification détectée | `A·1` | Mesure en session |
+| **Le fuseau UTC-4 ne disqualifie rien** : tenu par les données de fuseaux standard, **0,00 h d'erreur** de fraîcheur | `A·1` | Mesure en session |
+| **Le créole guadeloupéen ne disqualifie rien** : une brique embarque 142 langues dont le `gcf`, détection 3 sur 3. Une autre, plus connue, sort le créole guadeloupéen en tsonga et tswana — disqualifiée | `A·1` | Mesure en session |
+| **Un seul organe sans équivalent libre : les avis.** Quatre candidats, quatre éliminés — deux morts, un **sans aucun fichier de licence dans tout son arbre**, un hors sujet | `A·1` | Dépouillement des dépôts |
+| Mais le manquant réel est minuscule : l'orchestrateur de publication porte déjà le parcours d'autorisation complet et l'énumération des établissements. **Manquant = deux appels réseau** | `A·1` | Lecture du code source |
+| Deux demi-manquants : le **pont translingue** (une panne décrite en créole ne remonte pas sur le mot français) et le **vérificateur d'ancrage** (prototype de 32 lignes, attrape 2 affirmations non sourcées sur 5) | `A·1` | Mesure en session |
+| **Répartition : 55 % à assembler · 20 % de couture, 4 à 5 jours · 25 % à construire, 24 à 41 jours.** Un mois et demi, non huit organes | `A·2` | Calcul sur mesures |
+| **Le coût dominant est le jeu d'épreuve guadeloupéen : 25 à 40 jours-personne d'annotation** — plus cher que tout le périmètre de construction | `B·2` | Calcul statistique |
+| **Le coût est humain, dix contre un** : 22 à 37 jours-personne par an de maintenance, contre 450 à 700 € par an de serveur | `B·3` | Estimation sur dépôts, serveur en `C·3` |
+| Les deux briques qui tiennent les exigences les plus locales ont **un** mainteneur soutenu et **zéro**. Parade : 0,5 jour pour les verser au dépôt | `A·1` | Dépouillement des dépôts |
 
 **La convergence la plus précieuse de la session, et elle s'est renforcée à chaque tour.** Un seul organe — le journal de provenance — satisfait **quatre** obligations réglementaires distinctes, qu'aucun concurrent ne traite :
 
@@ -145,6 +161,10 @@ Institut national de la statistique · support et documentation développeurs Go
 — Prix plafond du segment libéral non sourcé : les éditeurs métier ne publient pas leurs tarifs
 — Le point d'accès aux avis Google est-il praticable ? Trois témoignages de forum disent non, aucune source primaire. **Décide à lui seul de la praticabilité du volet avis**
 — Nombre d'avis mensuels par établissement : inconnu, et il déplace tout le calcul
+
+### La question que personne n'a posée
+
+Le document demande **qui construit**. Il ne demande jamais **qui maintient**. Or le coût de maintenance domine le coût de construction, et il est humain : 22 à 37 jours-personne par an, contre 450 à 700 € de serveur. Un rapport de dix contre un.
 
 ### Limite de méthode établie
 
