@@ -180,3 +180,18 @@ Le document demande **qui construit**. Il ne demande jamais **qui maintient**. O
 | **Test à 0 € sur l'accès aux avis Google** | Un compte et une heure | La conclusion la plus coûteuse si elle est fausse. Si ce point d'accès est réellement inatteignable, le volet avis n'a **aucune** plateforme praticable |
 | **Question au bâtonnier de Guadeloupe** — gratuite | Quatre points rédigés, une réponse de trois lignes suffit | Lève la seule réserve du volet avocat : les textes ne nomment jamais « avis en ligne », donc toute l'analyse applique des règles générales à un objet non nommé |
 | Élargissement de l'accès réseau | Un réglage | Toute mesure guadeloupéenne réelle, et la vérification des sources primaires de droit |
+
+---
+
+## 8 — Promesses
+
+Toute annonce faite dans une réponse entre ici et n'en sort que quand l'objet existe sur disque. Un crochet de fin de tour signale celles qui dorment — ce registre existe parce que Laurent a dû demander où en était une compétence annoncée et jamais écrite.
+
+| Objet promis | Annoncé le | État |
+|---|---|---|
+| Compétence `registre-de-demarche` | 2 oct. 2026 | ✅ tenue — `.claude/skills/registre-de-demarche/SKILL.md` |
+| Registre de démarche de cette session | 2 oct. 2026 | ✅ tenu — ce fichier |
+| Compétence `conduite-par-vagues` | 2 oct. 2026 | ✅ tenue — `.claude/skills/conduite-par-vagues/SKILL.md` |
+| Crochets de démarrage et de fin de tour | 2 oct. 2026 | ✅ tenus — `.claude/hooks/` |
+| **Prompt de lancement réécrit en plan de construction** | 2 oct. 2026 | **⏳ dû** — j'ai annoncé la réécriture dès que l'agent méthode rendrait son chiffrage. Il a rendu |
+| **Mesure du déclenchement des deux compétences** | 2 oct. 2026 | **⏳ jamais fait** — deux compétences écrites et poussées sans qu'aucune n'ait été éprouvée. Par ma propre doctrine, elles sont au mieux en `B·3` |

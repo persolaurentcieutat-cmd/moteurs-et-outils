@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR/.claude/hooks/registre-au-demarrage.sh\"",
+            "timeout": 10,
+            "statusMessage": "Lecture du registre de démarche"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR/.claude/hooks/promesses-en-attente.sh\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
